@@ -1,21 +1,17 @@
 package main
 
+import "log"
+
 // Differences from I-D pseudo-code:
 // - No AQM
 // - Packet hash specified directly, so no cached value needed
 // - Send method contains sparse flag for simulation stats
-// - Added quick pull method
+// - Pull method contains quick flag for experimental quick pull
+// - Timestamp is a Tick for the simulation
 
 // Algorithm / I-D notes:
-// - Could rename P to K for "skip"
 // - Walking all buckets in dequeue may be expensive
-// - Pull operation could swap packet at scan pointer with one at end of queue,
-//   more efficient but more re-ordering
-// - Is AQM required for this to work?
 // - Enqueue might loop infinitely if MaxSize too small. What's the minimum?
-
-// Todo:
-// - burstiness
 
 type Packet struct {
 	Seqno     uint64
@@ -129,7 +125,9 @@ func (q *LFQ) Enqueue(p Packet, t Tick) {
 		if dp, found := q.Bulk.Pop(); found {
 			q.buckets[dp.Hash].Backlog -= 1
 		} else {
-			break // NOTE avoids infinite loop if MaxSize too small
+			// avoid infinite loop if MaxSize too small
+			log.Println("lfq: avoided infinite loop in enqueue")
+			break
 		}
 	}
 
