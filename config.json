@@ -1,0 +1,72 @@
+{
+	"DequeueInterval": 1000,
+	"EndTicks": 10000000,
+	"MTU": 1500,
+	"QuickPull": true,
+	"MaxSize": 48000,
+	"FlowDefs": [
+		{
+			"Offset": 0,
+			"Interval": 2950,
+			"IntervalVariance": 0,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 1200,
+			"SizeVariance": 99
+		},
+		{
+			"Offset": 0,
+			"Interval": 100,
+			"IntervalVariance": 0,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 1500,
+			"SizeVariance": 0
+		},
+		{
+			"Offset": 0,
+			"Interval": 1000,
+			"IntervalVariance": 0,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 1500,
+			"SizeVariance": 0
+		},
+		{
+			"Offset": 0,
+			"Interval": 975,
+			"IntervalVariance": 50,
+			"Burst": 2,
+			"BurstVariance": 2,
+			"Size": 200,
+			"SizeVariance": 50
+		},
+		{
+			"Offset": 0,
+			"Interval": 750,
+			"IntervalVariance": 0,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 50,
+			"SizeVariance": 100
+		},
+		{
+			"Offset": 0,
+			"Interval": 32000,
+			"IntervalVariance": 0,
+			"Burst": 32,
+			"BurstVariance": 0,
+			"Size": 1500,
+			"SizeVariance": 0
+		},
+		{
+			"Offset": 0,
+			"Interval": 20000,
+			"IntervalVariance": 100,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 100,
+			"SizeVariance": 0
+		}
+	]
+}
