@@ -32,10 +32,11 @@ type FlowBucket struct {
 type Queue struct {
 	packets   []*Packet
 	ScanIndex int
+	FastPull  bool
 }
 
-func NewQueue() *Queue {
-	return &Queue{make([]*Packet, 0), 0}
+func NewQueue(fastPull bool) *Queue {
+	return &Queue{make([]*Packet, 0), 0, fastPull}
 }
 
 func (q *Queue) Len() int {
@@ -79,10 +80,10 @@ func (q *Queue) Scan() (p *Packet) {
 	return
 }
 
-func (q *Queue) Pull(fast bool) (p *Packet) {
+func (q *Queue) Pull() (p *Packet) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
-		if fast {
+		if q.FastPull {
 			q.packets[q.ScanIndex] = q.packets[len(q.packets)-1]
 			q.packets = q.packets[:len(q.packets)-1]
 		} else {
@@ -97,23 +98,21 @@ type Sender interface {
 }
 
 type LFQ struct {
-	Sparse   *Queue
-	Bulk     *Queue
-	buckets  []FlowBucket
-	MaxSize  int
-	MTU      int
-	FastPull bool
-	Sender   Sender
+	Sparse  *Queue
+	Bulk    *Queue
+	buckets []FlowBucket
+	MaxSize int
+	MTU     int
+	Sender  Sender
 }
 
 func NewLFQ(maxFlows int, maxSize int, MTU int, fastPull bool, s Sender) *LFQ {
 	return &LFQ{
-		NewQueue(),
-		NewQueue(),
+		NewQueue(fastPull),
+		NewQueue(fastPull),
 		make([]FlowBucket, maxFlows),
 		maxSize,
 		MTU,
-		fastPull,
 		s,
 	}
 }
@@ -174,7 +173,7 @@ func (q *LFQ) Dequeue() {
 		if bkt := &q.buckets[p.Hash]; !bkt.Skip {
 			// packet eligible for immediate delivery
 			q.Sender.Send(p, false)
-			q.Bulk.Pull(q.FastPull)
+			q.Bulk.Pull()
 			q.sent(p, bkt)
 			return
 		} else {
@@ -191,4 +190,8 @@ func (q *LFQ) sent(p *Packet, bkt *FlowBucket) {
 		bkt.Skip = true
 		bkt.Deficit += q.MTU
 	}
+}
+
+func (q *LFQ) DumpState() {
+
 }
