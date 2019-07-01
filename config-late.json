@@ -1,0 +1,31 @@
+{
+	"DequeueInterval": 1000,
+	"EndTicks": 10000000,
+	"MTU": 1500,
+	"FastPull": false,
+	"MaxSize": 48000,
+	"LateDump": true,
+	"LateDumpPackets": false,
+	"FlowDefs": [
+		{
+			"Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at just short of dequeue interval (causes re-ordering)",
+			"Offset": 0,
+			"Interval": 975,
+			"IntervalVariance": 50,
+			"Burst": 2,
+			"BurstVariance": 2,
+			"Size": 200,
+			"SizeVariance": 50
+		},
+		{
+			"Description": "Small packets- 50 byte packets at 3/4 dequeue interval (causes re-ordering)",
+			"Offset": 0,
+			"Interval": 750,
+			"IntervalVariance": 0,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 50,
+			"SizeVariance": 10
+		}
+	]
+}

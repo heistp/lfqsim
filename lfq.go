@@ -206,7 +206,7 @@ func (q *LFQ) sent(p *Packet, bkt *FlowBucket) {
 }
 
 func (q *LFQ) Dump(label string, packets bool) {
-	log.Printf("LFQ state (%s):", label)
+	log.Printf("LFQ state dump (reason: %s):", label)
 	for i, bkt := range q.buckets {
 		log.Printf("  Bucket %d: backlog=%d, deficit=%d, skip=%t", i, bkt.Backlog,
 			bkt.Deficit, bkt.Skip)

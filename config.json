@@ -4,7 +4,7 @@
 	"MTU": 1500,
 	"FastPull": false,
 	"MaxSize": 48000,
-	"LateDump": true,
+	"LateDump": false,
 	"LateDumpPackets": false,
 	"FlowDefs": [
 		{
