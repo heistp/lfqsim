@@ -11,9 +11,9 @@
 			"Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at just short of dequeue interval (causes re-ordering)",
 			"Offset": 0,
 			"Interval": 975,
-			"IntervalVariance": 50,
+			"IntervalVariance": 0,
 			"Burst": 2,
-			"BurstVariance": 2,
+			"BurstVariance": 0,
 			"Size": 200,
 			"SizeVariance": 50
 		},
@@ -25,7 +25,7 @@
 			"Burst": 1,
 			"BurstVariance": 0,
 			"Size": 50,
-			"SizeVariance": 10
+			"SizeVariance": 0
 		}
 	]
 }

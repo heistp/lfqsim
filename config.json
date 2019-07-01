@@ -1,10 +1,10 @@
 {
 	"DequeueInterval": 1000,
-	"EndTicks": 10000000,
+	"EndTicks": 1000000000,
 	"MTU": 1500,
 	"FastPull": false,
 	"MaxSize": 48000,
-	"LateDump": false,
+	"LateDump": true,
 	"LateDumpPackets": false,
 	"FlowDefs": [
 		{

@@ -50,6 +50,9 @@ func (q *Queue) Size() (s int) {
 func (q *Queue) Pop() (p *Packet) {
 	if len(q.packets) > 0 {
 		p, q.packets = q.packets[0], q.packets[1:]
+		if q.ScanIndex > 0 {
+			q.ScanIndex--
+		}
 	}
 	return
 }
