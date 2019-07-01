@@ -4,6 +4,8 @@
 	"MTU": 1500,
 	"FastPull": false,
 	"MaxSize": 48000,
+	"LateDump": true,
+	"LateDumpPackets": false,
 	"FlowDefs": [
 		{
 			"Description": "1200 byte packets at just less then 3x dequeue interval",

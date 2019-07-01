@@ -4,17 +4,14 @@ import "log"
 
 // Differences from I-D pseudo-code:
 // - No AQM
-// - Packet hash specified directly, so no cached value needed
-// - Send method contains sparse flag for simulation stats
-// - Pull method contains fast flag for experimental fast pull
 // - Timestamp is a Tick for the simulation
+// - Packet hash specified directly, so no cached value needed
+// - FastPull flag uses experimental fast pull (causes packet re-ordering)
+// - Send method contains sparse flag for simulation stats
 
 // Algorithm / I-D notes:
 // - Walking all buckets in dequeue may be expensive
 // - Enqueue might loop infinitely if MaxSize too small. What's the minimum?
-
-// Todo:
-// - dump state on late packet
 
 type Packet struct {
 	Seqno     uint64
@@ -93,8 +90,24 @@ func (q *Queue) Pull() (p *Packet) {
 	return
 }
 
+func (q *Queue) Dump(label string, packets bool) {
+	log.Printf("  Queue state (%s), Length: %d, Size: %d, ScanIndex: %d",
+		label, q.Len(), q.Size(), q.ScanIndex)
+	if packets {
+		for i, p := range q.packets {
+			var prefix string
+			if i == q.ScanIndex {
+				prefix = "  -->"
+			} else {
+				prefix = "     "
+			}
+			log.Printf("%sPacket %d: %+v", prefix, i, p)
+		}
+	}
+}
+
 type Sender interface {
-	Send(p *Packet, sparse bool)
+	Send(p *Packet, sparse bool, q *LFQ)
 }
 
 type LFQ struct {
@@ -145,7 +158,7 @@ func (q *LFQ) Dequeue() {
 
 	// Sparse queue gets strict priority
 	if p = q.Sparse.Pop(); p != nil {
-		q.Sender.Send(p, true)
+		q.Sender.Send(p, true, q)
 		bkt := &q.buckets[p.Hash]
 		q.sent(p, bkt)
 		return
@@ -172,7 +185,7 @@ func (q *LFQ) Dequeue() {
 
 		if bkt := &q.buckets[p.Hash]; !bkt.Skip {
 			// packet eligible for immediate delivery
-			q.Sender.Send(p, false)
+			q.Sender.Send(p, false, q)
 			q.Bulk.Pull()
 			q.sent(p, bkt)
 			return
@@ -192,6 +205,12 @@ func (q *LFQ) sent(p *Packet, bkt *FlowBucket) {
 	}
 }
 
-func (q *LFQ) DumpState() {
-
+func (q *LFQ) Dump(label string, packets bool) {
+	log.Printf("LFQ state (%s):", label)
+	for i, bkt := range q.buckets {
+		log.Printf("  Bucket %d: backlog=%d, deficit=%d, skip=%t", i, bkt.Backlog,
+			bkt.Deficit, bkt.Skip)
+	}
+	q.Sparse.Dump("Sparse", packets)
+	q.Bulk.Dump("Bulk", packets)
 }

@@ -23,10 +23,13 @@ Using the default config.json, output similar to the following may be produced:
     "EndTicks": 10000000,
     "DequeueInterval": 1000,
     "MTU": 1500,
-    "FastPull": true,
+    "FastPull": false,
     "MaxSize": 48000,
+    "LateDump": true,
+    "LateDumpPackets": false,
     "FlowDefs": [
         {
+            "Description": "1200 byte packets at just less then 3x dequeue interval",
             "Offset": 0,
             "Interval": 2950,
             "IntervalVariance": 0,
@@ -36,6 +39,7 @@ Using the default config.json, output similar to the following may be produced:
             "SizeVariance": 99
         },
         {
+            "Description": "Aggressive flow- 1500 byte packets at 1/10 dequeue interval",
             "Offset": 0,
             "Interval": 100,
             "IntervalVariance": 0,
@@ -45,6 +49,7 @@ Using the default config.json, output similar to the following may be produced:
             "SizeVariance": 0
         },
         {
+            "Description": "1500 byte packets exactly at dequeue interval",
             "Offset": 0,
             "Interval": 1000,
             "IntervalVariance": 0,
@@ -54,24 +59,7 @@ Using the default config.json, output similar to the following may be produced:
             "SizeVariance": 0
         },
         {
-            "Offset": 0,
-            "Interval": 975,
-            "IntervalVariance": 50,
-            "Burst": 2,
-            "BurstVariance": 2,
-            "Size": 200,
-            "SizeVariance": 50
-        },
-        {
-            "Offset": 0,
-            "Interval": 750,
-            "IntervalVariance": 0,
-            "Burst": 1,
-            "BurstVariance": 0,
-            "Size": 50,
-            "SizeVariance": 100
-        },
-        {
+            "Description": "Bursty flow- 1500 byte packets with 32 packet bursts (exactly MaxSize) at 32x dequeue interval",
             "Offset": 0,
             "Interval": 32000,
             "IntervalVariance": 0,
@@ -81,6 +69,27 @@ Using the default config.json, output similar to the following may be produced:
             "SizeVariance": 0
         },
         {
+            "Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at just short of dequeue interval (causes re-ordering)",
+            "Offset": 0,
+            "Interval": 975,
+            "IntervalVariance": 50,
+            "Burst": 2,
+            "BurstVariance": 2,
+            "Size": 200,
+            "SizeVariance": 50
+        },
+        {
+            "Description": "Small packets- 50 byte packets at 3/4 dequeue interval (causes re-ordering)",
+            "Offset": 0,
+            "Interval": 750,
+            "IntervalVariance": 0,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 50,
+            "SizeVariance": 10
+        },
+        {
+            "Description": "Sparse flow- 100 byte packets at 20x dequeue interval",
             "Offset": 0,
             "Interval": 20000,
             "IntervalVariance": 100,
@@ -94,72 +103,93 @@ Using the default config.json, output similar to the following may be produced:
 {
     "FlowStats": [
         {
-            "BytesSent": 1037245,
-            "Throughput": 103.7245,
-            "MeanSojourn": 889.8030127462341,
-            "SparseSends": 736,
-            "BulkSends": 127,
-            "TotalSends": 863,
+            "BytesSent": 1005473,
+            "Throughput": 100.5473,
+            "MeanSojourn": 922.3747016706444,
+            "Enqueues": 3390,
+            "Drops": 2552,
+            "DropsPercent": 75.28023598820059,
+            "SparseSends": 699,
+            "BulkSends": 139,
+            "TotalSends": 838,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
-            "BytesSent": 1038000,
-            "Throughput": 103.8,
-            "MeanSojourn": 2624.566473988439,
-            "SparseSends": 13,
-            "BulkSends": 679,
-            "TotalSends": 692,
+            "BytesSent": 1006500,
+            "Throughput": 100.65,
+            "MeanSojourn": 2599.2548435171384,
+            "Enqueues": 100000,
+            "Drops": 99329,
+            "DropsPercent": 99.329,
+            "SparseSends": 8,
+            "BulkSends": 663,
+            "TotalSends": 671,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
-            "BytesSent": 1038000,
-            "Throughput": 103.8,
-            "MeanSojourn": 1231.21387283237,
-            "SparseSends": 398,
-            "BulkSends": 294,
-            "TotalSends": 692,
-            "LateSends": 1,
-            "LateSendsPercent": 0.001445086705202312
+            "BytesSent": 1006500,
+            "Throughput": 100.65,
+            "MeanSojourn": 2025.3353204172877,
+            "Enqueues": 10000,
+            "Drops": 9329,
+            "DropsPercent": 93.29,
+            "SparseSends": 116,
+            "BulkSends": 555,
+            "TotalSends": 671,
+            "LateSends": 0,
+            "LateSendsPercent": 0
         },
         {
-            "BytesSent": 648176,
-            "Throughput": 64.8176,
-            "MeanSojourn": 1527.6317578004325,
-            "SparseSends": 696,
-            "BulkSends": 2541,
-            "TotalSends": 3237,
-            "LateSends": 7,
-            "LateSendsPercent": 0.002162496138399753
-        },
-        {
-            "BytesSent": 191261,
-            "Throughput": 19.1261,
-            "MeanSojourn": 1415.5861696380334,
-            "SparseSends": 393,
-            "BulkSends": 3309,
-            "TotalSends": 3702,
-            "LateSends": 136,
-            "LateSendsPercent": 0.036736898973527825
-        },
-        {
-            "BytesSent": 474000,
-            "Throughput": 47.4,
-            "MeanSojourn": 367.0886075949367,
+            "BytesSent": 498000,
+            "Throughput": 49.8,
+            "MeanSojourn": 240.96385542168676,
+            "Enqueues": 10016,
+            "Drops": 9684,
+            "DropsPercent": 96.685303514377,
             "SparseSends": 313,
-            "BulkSends": 3,
-            "TotalSends": 316,
+            "BulkSends": 19,
+            "TotalSends": 332,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
-            "BytesSent": 49800,
-            "Throughput": 4.98,
-            "MeanSojourn": 613.9277108433735,
-            "SparseSends": 497,
-            "BulkSends": 1,
-            "TotalSends": 498,
+            "BytesSent": 627792,
+            "Throughput": 62.7792,
+            "MeanSojourn": 1440.6107746254384,
+            "Enqueues": 15429,
+            "Drops": 12292,
+            "DropsPercent": 79.6681573659991,
+            "SparseSends": 776,
+            "BulkSends": 2361,
+            "TotalSends": 3137,
+            "LateSends": 9,
+            "LateSendsPercent": 0.2868983104877271
+        },
+        {
+            "BytesSent": 192191,
+            "Throughput": 19.2191,
+            "MeanSojourn": 1241.1177385892115,
+            "Enqueues": 13334,
+            "Drops": 9478,
+            "DropsPercent": 71.08144592770361,
+            "SparseSends": 356,
+            "BulkSends": 3500,
+            "TotalSends": 3856,
+            "LateSends": 28,
+            "LateSendsPercent": 0.7261410788381742
+        },
+        {
+            "BytesSent": 49500,
+            "Throughput": 4.95,
+            "MeanSojourn": 740.9151515151515,
+            "Enqueues": 500,
+            "Drops": 5,
+            "DropsPercent": 1,
+            "SparseSends": 495,
+            "BulkSends": 0,
+            "TotalSends": 495,
             "LateSends": 0,
             "LateSendsPercent": 0
         }
@@ -177,6 +207,9 @@ The `config.json` file controls the simulation, and has the following format:
 * `FastPull` if true, use an experimental pull method that copies the queue
   tail to the scan position and shortens the tail by one
 * `MaxSize` the maximum size of the queue, in bytes
+* `LateDump` if true, dump LFQ state on late packets
+* `LateDumpPackets` if true, when dumping LFQ state on late packets, include
+  info on each packet in the queues
 * `FlowDefs` an array of flow definitions, each of which contains:
   * `Offset` offset from beginning of simulation to start enqueueing
   * `Interval` the number of simulation ticks from one enqueue to the next

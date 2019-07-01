@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"time"
 )
@@ -30,6 +31,8 @@ type Config struct {
 	MTU             int
 	FastPull        bool
 	MaxSize         int
+	LateDump        bool
+	LateDumpPackets bool
 	FlowDefs        []FlowDef
 }
 
@@ -75,7 +78,7 @@ func NewSimulator(c *Config) *Simulator {
 	return s
 }
 
-func (s *Simulator) Send(p *Packet, sparse bool) {
+func (s *Simulator) Send(p *Packet, sparse bool, q *LFQ) {
 	i := p.Hash
 	r := &s.Results.FlowStats[i]
 	r.BytesSent += uint64(p.Size)
@@ -88,6 +91,9 @@ func (s *Simulator) Send(p *Packet, sparse bool) {
 	}
 
 	if p.Seqno < s.FlowStates[i].PriorSeqno {
+		if s.LateDump {
+			q.Dump(fmt.Sprintf("late send for packet %+v\n", p), s.LateDumpPackets)
+		}
 		r.LateSends++
 	}
 	s.FlowStates[i].PriorSeqno = p.Seqno
