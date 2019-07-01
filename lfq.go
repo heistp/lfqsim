@@ -14,7 +14,6 @@ import "log"
 // - Enqueue might loop infinitely if MaxSize too small. What's the minimum?
 
 // Todo:
-// - record dropped packets
 // - dump state on late packet
 
 type Packet struct {
@@ -50,10 +49,9 @@ func (q *Queue) Size() (s int) {
 	return
 }
 
-func (q *Queue) Pop() (p *Packet, found bool) {
+func (q *Queue) Pop() (p *Packet) {
 	if len(q.packets) > 0 {
 		p, q.packets = q.packets[0], q.packets[1:]
-		found = true
 	}
 	return
 }
@@ -63,10 +61,9 @@ func (q *Queue) Push(p *Packet) {
 	return
 }
 
-func (q *Queue) Head() (p *Packet, found bool) {
+func (q *Queue) Head() (p *Packet) {
 	if len(q.packets) > 0 {
 		p = q.packets[0]
-		found = true
 	}
 	return
 }
@@ -75,18 +72,16 @@ func (q *Queue) Empty() bool {
 	return len(q.packets) == 0
 }
 
-func (q *Queue) Scan() (p *Packet, found bool) {
+func (q *Queue) Scan() (p *Packet) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
-		found = true
 	}
 	return
 }
 
-func (q *Queue) Pull(fast bool) (p *Packet, found bool) {
+func (q *Queue) Pull(fast bool) (p *Packet) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
-		found = true
 		if fast {
 			q.packets[q.ScanIndex] = q.packets[len(q.packets)-1]
 			q.packets = q.packets[:len(q.packets)-1]
@@ -126,7 +121,7 @@ func NewLFQ(maxFlows int, maxSize int, MTU int, fastPull bool, s Sender) *LFQ {
 func (q *LFQ) Enqueue(p *Packet, t Tick) {
 	for q.Sparse.Size()+q.Bulk.Size()+p.Size > q.MaxSize {
 		// queue overflow, drop from bulk head
-		if dp, found := q.Bulk.Pop(); found {
+		if dp := q.Bulk.Pop(); dp != nil {
 			q.buckets[dp.Hash].Backlog -= 1
 		} else {
 			// avoid infinite loop if MaxSize too small
@@ -148,11 +143,9 @@ func (q *LFQ) Enqueue(p *Packet, t Tick) {
 
 func (q *LFQ) Dequeue() {
 	var p *Packet
-	var found bool
 
 	// Sparse queue gets strict priority
-	p, found = q.Sparse.Pop()
-	if found {
+	if p = q.Sparse.Pop(); p != nil {
 		q.Sender.Send(p, true)
 		bkt := &q.buckets[p.Hash]
 		q.sent(p, bkt)
@@ -161,7 +154,7 @@ func (q *LFQ) Dequeue() {
 
 	// Process Bulk queue if Sparse queue was empty
 	for !q.Bulk.Empty() {
-		if p, found = q.Bulk.Scan(); !found {
+		if p = q.Bulk.Scan(); p == nil {
 			// scan has reached tail of queue
 			for i := 0; i < len(q.buckets); i++ {
 				bkt := &q.buckets[i]
@@ -175,7 +168,7 @@ func (q *LFQ) Dequeue() {
 			}
 
 			q.Bulk.ScanIndex = 0
-			p, _ = q.Bulk.Scan()
+			p = q.Bulk.Scan()
 		}
 
 		if bkt := &q.buckets[p.Hash]; !bkt.Skip {

@@ -8,6 +8,7 @@ import (
 type Tick uint64
 
 type FlowDef struct {
+	Description      string
 	Offset           Tick
 	Interval         Tick
 	IntervalVariance Tick
@@ -36,6 +37,9 @@ type FlowStats struct {
 	BytesSent        uint64
 	Throughput       float64
 	MeanSojourn      float64
+	Enqueues         uint64
+	Drops            uint64
+	DropsPercent     float64
 	SparseSends      uint64
 	BulkSends        uint64
 	TotalSends       uint64
@@ -82,7 +86,6 @@ func (s *Simulator) Send(p *Packet, sparse bool) {
 	} else {
 		r.BulkSends++
 	}
-	r.TotalSends++
 
 	if p.Seqno < s.FlowStates[i].PriorSeqno {
 		r.LateSends++
@@ -98,10 +101,12 @@ func (s *Simulator) Run() *Results {
 		// call enqueue for each eligible flow
 		for i := 0; i < len(s.FlowStates); i++ {
 			fs := &s.FlowStates[i]
+			r := &s.Results.FlowStats[i]
 			if fs.NextEnqueue == s.Tick {
 				fd := &s.FlowDefs[i]
 				for j := 0; j < fd.Burst+s.randVaryInt(fd.BurstVariance); j++ {
 					q.Enqueue(&Packet{fs.NextSeqno, 0, fd.Size + s.randVaryInt(fd.SizeVariance), i}, s.Tick)
+					r.Enqueues++
 					fs.NextSeqno++
 				}
 				fs.NextEnqueue += fd.Interval + s.randVaryTick(fd.IntervalVariance)
@@ -117,10 +122,13 @@ func (s *Simulator) Run() *Results {
 	// post-process results
 	for i := 0; i < len(s.FlowDefs); i++ {
 		r := &s.Results.FlowStats[i]
+		r.TotalSends = r.SparseSends + r.BulkSends
 		r.Throughput = float64(s.DequeueInterval) * float64(r.BytesSent) /
 			(float64(s.EndTicks) - float64(s.FlowDefs[i].Offset))
 		r.MeanSojourn = float64(r.TotalSojourn) / float64(r.TotalSends)
-		r.LateSendsPercent = float64(r.LateSends) / float64(r.TotalSends)
+		r.LateSendsPercent = float64(100.0) * float64(r.LateSends) / float64(r.TotalSends)
+		r.Drops = r.Enqueues - r.TotalSends
+		r.DropsPercent = float64(100.0) * float64(r.Drops) / float64(r.Enqueues)
 	}
 
 	return &s.Results

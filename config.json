@@ -6,6 +6,7 @@
 	"MaxSize": 48000,
 	"FlowDefs": [
 		{
+			"Description": "1200 byte packets at just less then 3x dequeue interval",
 			"Offset": 0,
 			"Interval": 2950,
 			"IntervalVariance": 0,
@@ -15,6 +16,7 @@
 			"SizeVariance": 99
 		},
 		{
+			"Description": "Aggressive flow- 1500 byte packets at 1/10 dequeue interval",
 			"Offset": 0,
 			"Interval": 100,
 			"IntervalVariance": 0,
@@ -24,6 +26,7 @@
 			"SizeVariance": 0
 		},
 		{
+			"Description": "1500 byte packets exactly at dequeue interval",
 			"Offset": 0,
 			"Interval": 1000,
 			"IntervalVariance": 0,
@@ -33,24 +36,7 @@
 			"SizeVariance": 0
 		},
 		{
-			"Offset": 0,
-			"Interval": 975,
-			"IntervalVariance": 50,
-			"Burst": 2,
-			"BurstVariance": 2,
-			"Size": 200,
-			"SizeVariance": 50
-		},
-		{
-			"Offset": 0,
-			"Interval": 750,
-			"IntervalVariance": 0,
-			"Burst": 1,
-			"BurstVariance": 0,
-			"Size": 50,
-			"SizeVariance": 100
-		},
-		{
+			"Description": "Bursty flow- 1500 byte packets with 32 packet bursts (exactly MaxSize) at 32x dequeue interval",
 			"Offset": 0,
 			"Interval": 32000,
 			"IntervalVariance": 0,
@@ -60,6 +46,27 @@
 			"SizeVariance": 0
 		},
 		{
+			"Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at just short of dequeue interval (causes re-ordering)",
+			"Offset": 0,
+			"Interval": 975,
+			"IntervalVariance": 50,
+			"Burst": 2,
+			"BurstVariance": 2,
+			"Size": 200,
+			"SizeVariance": 50
+		},
+		{
+			"Description": "Small packets- 50 byte packets at 3/4 dequeue interval (causes re-ordering)",
+			"Offset": 0,
+			"Interval": 750,
+			"IntervalVariance": 0,
+			"Burst": 1,
+			"BurstVariance": 0,
+			"Size": 50,
+			"SizeVariance": 10
+		},
+		{
+			"Description": "Sparse flow- 100 byte packets at 20x dequeue interval",
 			"Offset": 0,
 			"Interval": 20000,
 			"IntervalVariance": 100,
