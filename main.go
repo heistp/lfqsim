@@ -4,32 +4,30 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
+	"log"
 	"os"
 )
-
-func fail(err error) {
-	fmt.Fprintf(os.Stderr, "ERROR: %s\n", err)
-	os.Exit(1)
-}
 
 func printJson(v interface{}) {
 	json, err := json.MarshalIndent(v, "", "    ")
 	if err != nil {
-		fail(err)
+		log.Fatalln(err)
 	}
 
 	fmt.Println(string(json))
 }
 
 func main() {
+	log.SetFlags(0)
+
 	var c Config
 	d := json.NewDecoder(bufio.NewReader(os.Stdin))
 	if err := d.Decode(&c); err != nil {
-		fail(err)
+		log.Fatalln(err)
 	}
 	printJson(c)
 
-	s := NewSimulator(&c)
-	r := s.Run()
+	r := NewSimulator(&c).Run()
+
 	printJson(r)
 }
