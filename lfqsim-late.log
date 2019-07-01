@@ -29,1575 +29,1563 @@
         }
     ]
 }
-LFQ state dump (reason: late send for packet &{Seqno:135 Timestamp:101250 Size:54 Hash:1}
+LFQ state dump (reason: late packet &{Seqno:136 Timestamp:102000 Size:59 Hash:1}
 ):
-  Bucket 0: backlog=211, deficit=1408, skip=true
-  Bucket 1: backlog=113, deficit=1467, skip=false
+  Bucket 0: backlog=213, deficit=1472, skip=true
+  Bucket 1: backlog=111, deficit=1458, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 324, Size: 47785, ScanIndex: 58
-LFQ state dump (reason: late send for packet &{Seqno:141 Timestamp:105750 Size:50 Hash:1}
+  Queue state (Bulk), Length: 324, Size: 47889, ScanIndex: 76
+LFQ state dump (reason: late packet &{Seqno:148 Timestamp:111000 Size:57 Hash:1}
 ):
-  Bucket 0: backlog=206, deficit=1311, skip=true
-  Bucket 1: backlog=132, deficit=1485, skip=false
+  Bucket 0: backlog=207, deficit=1389, skip=true
+  Bucket 1: backlog=132, deficit=1449, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 338, Size: 47852, ScanIndex: 3
-LFQ state dump (reason: late send for packet &{Seqno:185 Timestamp:138750 Size:48 Hash:1}
+  Queue state (Bulk), Length: 339, Size: 47697, ScanIndex: 33
+LFQ state dump (reason: late packet &{Seqno:164 Timestamp:123000 Size:40 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=1418, skip=true
-  Bucket 1: backlog=151, deficit=1457, skip=false
+  Bucket 0: backlog=206, deficit=1163, skip=false
+  Bucket 1: backlog=143, deficit=1467, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 351, Size: 47596, ScanIndex: 2
-LFQ state dump (reason: late send for packet &{Seqno:234 Timestamp:175500 Size:54 Hash:1}
+  Queue state (Bulk), Length: 349, Size: 47923, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:205 Timestamp:153750 Size:59 Hash:1}
 ):
-  Bucket 0: backlog=199, deficit=474, skip=false
-  Bucket 1: backlog=162, deficit=1469, skip=false
+  Bucket 0: backlog=200, deficit=1176, skip=false
+  Bucket 1: backlog=161, deficit=1472, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47892, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:274 Timestamp:205500 Size:49 Hash:1}
+  Queue state (Bulk), Length: 361, Size: 47949, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:267 Timestamp:200250 Size:60 Hash:1}
 ):
-  Bucket 0: backlog=196, deficit=1252, skip=false
-  Bucket 1: backlog=167, deficit=1481, skip=false
+  Bucket 0: backlog=196, deficit=747, skip=false
+  Bucket 1: backlog=177, deficit=1469, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47768, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:325 Timestamp:243750 Size:55 Hash:1}
+  Queue state (Bulk), Length: 373, Size: 47967, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:328 Timestamp:246000 Size:47 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=1343, skip=false
-  Bucket 1: backlog=170, deficit=1477, skip=false
+  Bucket 0: backlog=196, deficit=410, skip=false
+  Bucket 1: backlog=179, deficit=1491, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47915, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:378 Timestamp:283500 Size:40 Hash:1}
+  Queue state (Bulk), Length: 375, Size: 47925, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:372 Timestamp:279000 Size:49 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=1405, skip=false
-  Bucket 1: backlog=168, deficit=1455, skip=false
+  Bucket 0: backlog=198, deficit=1490, skip=false
+  Bucket 1: backlog=170, deficit=1469, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47903, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:419 Timestamp:314250 Size:45 Hash:1}
+  Queue state (Bulk), Length: 368, Size: 47987, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:431 Timestamp:323250 Size:42 Hash:1}
 ):
-  Bucket 0: backlog=196, deficit=956, skip=false
-  Bucket 1: backlog=180, deficit=1488, skip=false
+  Bucket 0: backlog=201, deficit=1215, skip=false
+  Bucket 1: backlog=168, deficit=1478, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 376, Size: 47839, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:461 Timestamp:345750 Size:43 Hash:1}
+  Queue state (Bulk), Length: 369, Size: 47847, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:485 Timestamp:363750 Size:43 Hash:1}
 ):
-  Bucket 0: backlog=192, deficit=1487, skip=false
-  Bucket 1: backlog=186, deficit=1475, skip=false
+  Bucket 0: backlog=201, deficit=912, skip=false
+  Bucket 1: backlog=170, deficit=1451, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 378, Size: 47859, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:574 Timestamp:430500 Size:60 Hash:1}
+  Queue state (Bulk), Length: 371, Size: 47831, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:533 Timestamp:399750 Size:45 Hash:1}
 ):
-  Bucket 0: backlog=193, deficit=1387, skip=false
-  Bucket 1: backlog=174, deficit=1452, skip=false
+  Bucket 0: backlog=201, deficit=760, skip=false
+  Bucket 1: backlog=169, deficit=1484, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47959, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:685 Timestamp:513750 Size:50 Hash:1}
+  Queue state (Bulk), Length: 370, Size: 47877, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:586 Timestamp:439500 Size:47 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=1192, skip=false
-  Bucket 1: backlog=163, deficit=1498, skip=false
+  Bucket 0: backlog=203, deficit=1495, skip=false
+  Bucket 1: backlog=163, deficit=1466, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47658, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:738 Timestamp:553500 Size:59 Hash:1}
+  Queue state (Bulk), Length: 366, Size: 47915, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:648 Timestamp:486000 Size:47 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=1481, skip=false
-  Bucket 1: backlog=157, deficit=1483, skip=false
+  Bucket 0: backlog=198, deficit=947, skip=false
+  Bucket 1: backlog=156, deficit=1457, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47894, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:789 Timestamp:591750 Size:57 Hash:1}
+  Queue state (Bulk), Length: 354, Size: 47707, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:696 Timestamp:522000 Size:60 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=1215, skip=false
-  Bucket 1: backlog=159, deficit=1459, skip=false
+  Bucket 0: backlog=201, deficit=806, skip=false
+  Bucket 1: backlog=157, deficit=1449, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47828, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:844 Timestamp:633000 Size:47 Hash:1}
+  Queue state (Bulk), Length: 358, Size: 47807, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:786 Timestamp:589500 Size:46 Hash:1}
 ):
-  Bucket 0: backlog=199, deficit=1312, skip=false
-  Bucket 1: backlog=154, deficit=1457, skip=false
+  Bucket 0: backlog=196, deficit=1391, skip=false
+  Bucket 1: backlog=155, deficit=1458, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 353, Size: 47847, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:893 Timestamp:669750 Size:60 Hash:1}
+  Queue state (Bulk), Length: 351, Size: 47920, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:841 Timestamp:630750 Size:53 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=877, skip=false
-  Bucket 1: backlog=160, deficit=1483, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47804, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:943 Timestamp:707250 Size:47 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=1370, skip=false
-  Bucket 1: backlog=151, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47994, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:993 Timestamp:744750 Size:59 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1444, skip=false
-  Bucket 1: backlog=154, deficit=1447, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47819, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1043 Timestamp:782250 Size:48 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1097, skip=false
-  Bucket 1: backlog=154, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47864, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1085 Timestamp:813750 Size:50 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1191, skip=false
-  Bucket 1: backlog=160, deficit=1465, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47842, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1117 Timestamp:837750 Size:55 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1462, skip=false
-  Bucket 1: backlog=167, deficit=1496, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47953, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1172 Timestamp:879000 Size:46 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1242, skip=false
-  Bucket 1: backlog=169, deficit=1479, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47945, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1225 Timestamp:918750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1326, skip=false
-  Bucket 1: backlog=170, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47986, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1277 Timestamp:957750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1074, skip=false
-  Bucket 1: backlog=173, deficit=1460, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47901, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1325 Timestamp:993750 Size:58 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1478, skip=false
-  Bucket 1: backlog=166, deficit=1485, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47913, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1382 Timestamp:1036500 Size:55 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1389, skip=false
-  Bucket 1: backlog=161, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47950, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1435 Timestamp:1076250 Size:42 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1386, skip=false
-  Bucket 1: backlog=158, deficit=1467, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47985, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1489 Timestamp:1116750 Size:47 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1262, skip=false
-  Bucket 1: backlog=154, deficit=1493, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 351, Size: 47798, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1538 Timestamp:1153500 Size:47 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1468, skip=true
-  Bucket 1: backlog=167, deficit=1482, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47933, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1581 Timestamp:1185750 Size:50 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1219, skip=false
-  Bucket 1: backlog=158, deficit=1473, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47777, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1622 Timestamp:1216500 Size:53 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=997, skip=false
-  Bucket 1: backlog=169, deficit=1485, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47890, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1677 Timestamp:1257750 Size:52 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1174, skip=false
-  Bucket 1: backlog=165, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47798, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1721 Timestamp:1290750 Size:58 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1343, skip=false
-  Bucket 1: backlog=166, deficit=1464, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47974, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1833 Timestamp:1374750 Size:44 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=820, skip=false
-  Bucket 1: backlog=157, deficit=1493, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47973, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1877 Timestamp:1407750 Size:58 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1408, skip=false
-  Bucket 1: backlog=158, deficit=1466, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47891, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1929 Timestamp:1446750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=674, skip=false
-  Bucket 1: backlog=166, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47869, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:1977 Timestamp:1482750 Size:53 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1174, skip=false
-  Bucket 1: backlog=167, deficit=1452, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47928, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2019 Timestamp:1514250 Size:47 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=952, skip=false
-  Bucket 1: backlog=173, deficit=1456, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47989, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2082 Timestamp:1561500 Size:44 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=200, skip=false
-  Bucket 1: backlog=173, deficit=1475, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 370, Size: 47850, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2122 Timestamp:1591500 Size:52 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1499, skip=false
-  Bucket 1: backlog=167, deficit=1497, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47954, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2178 Timestamp:1633500 Size:43 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=228, skip=false
-  Bucket 1: backlog=178, deficit=1489, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 375, Size: 47964, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2221 Timestamp:1665750 Size:45 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=924, skip=false
-  Bucket 1: backlog=176, deficit=1453, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 374, Size: 47858, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2271 Timestamp:1703250 Size:53 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=632, skip=false
-  Bucket 1: backlog=180, deficit=1479, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 375, Size: 47907, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2334 Timestamp:1750500 Size:42 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=666, skip=false
-  Bucket 1: backlog=169, deficit=1442, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47829, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2384 Timestamp:1788000 Size:51 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=984, skip=false
-  Bucket 1: backlog=161, deficit=1491, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47759, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2435 Timestamp:1826250 Size:56 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=797, skip=false
-  Bucket 1: backlog=161, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47840, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2489 Timestamp:1866750 Size:43 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1345, skip=false
-  Bucket 1: backlog=156, deficit=1463, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47964, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2530 Timestamp:1897500 Size:45 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1285, skip=false
-  Bucket 1: backlog=161, deficit=1485, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47966, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2581 Timestamp:1935750 Size:51 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1054, skip=false
-  Bucket 1: backlog=165, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47999, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2635 Timestamp:1976250 Size:55 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1115, skip=false
-  Bucket 1: backlog=163, deficit=1457, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47925, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2677 Timestamp:2007750 Size:48 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1371, skip=false
-  Bucket 1: backlog=165, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47964, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2736 Timestamp:2052000 Size:45 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=137, skip=false
-  Bucket 1: backlog=170, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47593, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2779 Timestamp:2084250 Size:42 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1207, skip=false
-  Bucket 1: backlog=168, deficit=1482, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47863, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2835 Timestamp:2126250 Size:55 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=934, skip=false
-  Bucket 1: backlog=165, deficit=1466, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47830, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2892 Timestamp:2169000 Size:44 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=889, skip=false
-  Bucket 1: backlog=162, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47925, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2936 Timestamp:2202000 Size:45 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1394, skip=false
-  Bucket 1: backlog=157, deficit=1475, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 353, Size: 47906, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:2980 Timestamp:2235000 Size:42 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1490, skip=false
-  Bucket 1: backlog=166, deficit=1463, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47863, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3033 Timestamp:2274750 Size:44 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=896, skip=false
-  Bucket 1: backlog=168, deficit=1489, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47998, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3082 Timestamp:2311500 Size:46 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1206, skip=false
-  Bucket 1: backlog=165, deficit=1470, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47927, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3131 Timestamp:2348250 Size:42 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=1213, skip=false
-  Bucket 1: backlog=166, deficit=1470, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47831, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3183 Timestamp:2387250 Size:60 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=932, skip=false
-  Bucket 1: backlog=162, deficit=1482, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47992, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3228 Timestamp:2421000 Size:54 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=1048, skip=false
-  Bucket 1: backlog=168, deficit=1466, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47955, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3282 Timestamp:2461500 Size:54 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1331, skip=false
-  Bucket 1: backlog=159, deficit=1482, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47965, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3340 Timestamp:2505000 Size:57 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=550, skip=false
-  Bucket 1: backlog=161, deficit=1469, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47933, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3392 Timestamp:2544000 Size:54 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1256, skip=false
-  Bucket 1: backlog=154, deficit=1480, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47774, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3442 Timestamp:2581500 Size:58 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1014, skip=false
-  Bucket 1: backlog=158, deficit=1455, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47873, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3491 Timestamp:2618250 Size:59 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=732, skip=false
-  Bucket 1: backlog=159, deficit=1447, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47966, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3545 Timestamp:2658750 Size:43 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=1175, skip=false
-  Bucket 1: backlog=155, deficit=1464, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47773, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3600 Timestamp:2700000 Size:43 Hash:1}
-):
-  Bucket 0: backlog=205, deficit=1275, skip=false
-  Bucket 1: backlog=147, deficit=1497, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 352, Size: 47955, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3642 Timestamp:2731500 Size:59 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1113, skip=false
-  Bucket 1: backlog=153, deficit=1488, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47748, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3694 Timestamp:2770500 Size:46 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1105, skip=false
-  Bucket 1: backlog=155, deficit=1480, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47990, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3741 Timestamp:2805750 Size:46 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=528, skip=false
-  Bucket 1: backlog=164, deficit=1478, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47863, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3795 Timestamp:2846250 Size:51 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1382, skip=true
-  Bucket 1: backlog=162, deficit=1482, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47863, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3828 Timestamp:2871000 Size:50 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1382, skip=false
-  Bucket 1: backlog=162, deficit=1493, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47981, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3884 Timestamp:2913000 Size:44 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=812, skip=false
-  Bucket 1: backlog=165, deficit=1497, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47855, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:3937 Timestamp:2952750 Size:46 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1281, skip=false
-  Bucket 1: backlog=159, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47882, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4043 Timestamp:3032250 Size:52 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=925, skip=false
+  Bucket 0: backlog=195, deficit=968, skip=false
   Bucket 1: backlog=157, deficit=1453, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47918, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4094 Timestamp:3070500 Size:40 Hash:1}
+  Queue state (Bulk), Length: 352, Size: 47907, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:893 Timestamp:669750 Size:40 Hash:1}
 ):
-  Bucket 0: backlog=196, deficit=1484, skip=true
-  Bucket 1: backlog=164, deficit=1474, skip=false
+  Bucket 0: backlog=196, deficit=641, skip=false
+  Bucket 1: backlog=160, deficit=1458, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47827, ScanIndex: 2
-LFQ state dump (reason: late send for packet &{Seqno:4140 Timestamp:3105000 Size:48 Hash:1}
+  Queue state (Bulk), Length: 356, Size: 47750, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:945 Timestamp:708750 Size:55 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=889, skip=false
-  Bucket 1: backlog=160, deficit=1470, skip=false
+  Bucket 0: backlog=197, deficit=1126, skip=false
+  Bucket 1: backlog=153, deficit=1483, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47939, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4199 Timestamp:3149250 Size:55 Hash:1}
+  Queue state (Bulk), Length: 350, Size: 47553, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:990 Timestamp:742500 Size:47 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=1116, skip=false
-  Bucket 1: backlog=154, deficit=1450, skip=false
+  Bucket 0: backlog=198, deficit=755, skip=false
+  Bucket 1: backlog=158, deficit=1448, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 352, Size: 47790, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4247 Timestamp:3185250 Size:51 Hash:1}
+  Queue state (Bulk), Length: 356, Size: 47950, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1037 Timestamp:777750 Size:47 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=1083, skip=false
-  Bucket 1: backlog=153, deficit=1469, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 351, Size: 47860, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4300 Timestamp:3225000 Size:48 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1342, skip=false
-  Bucket 1: backlog=146, deficit=1469, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 346, Size: 47997, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4349 Timestamp:3261750 Size:40 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=517, skip=false
-  Bucket 1: backlog=156, deficit=1463, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47806, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4394 Timestamp:3295500 Size:60 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1453, skip=false
-  Bucket 1: backlog=153, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47973, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4441 Timestamp:3330750 Size:51 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1114, skip=false
-  Bucket 1: backlog=155, deficit=1493, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47889, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4491 Timestamp:3368250 Size:44 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=378, skip=false
-  Bucket 1: backlog=163, deficit=1459, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47846, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4545 Timestamp:3408750 Size:40 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=220, skip=false
-  Bucket 1: backlog=168, deficit=1474, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47995, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4585 Timestamp:3438750 Size:55 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=555, skip=false
-  Bucket 1: backlog=171, deficit=1490, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47977, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4637 Timestamp:3477750 Size:44 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=352, skip=false
-  Bucket 1: backlog=172, deficit=1491, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47783, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4693 Timestamp:3519750 Size:56 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1089, skip=false
-  Bucket 1: backlog=162, deficit=1475, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47969, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4745 Timestamp:3558750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1156, skip=false
-  Bucket 1: backlog=162, deficit=1454, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47820, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4793 Timestamp:3594750 Size:52 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1426, skip=false
-  Bucket 1: backlog=156, deficit=1474, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47964, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4847 Timestamp:3635250 Size:47 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=689, skip=false
-  Bucket 1: backlog=160, deficit=1462, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47975, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4894 Timestamp:3670500 Size:45 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=619, skip=false
-  Bucket 1: backlog=166, deficit=1465, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47911, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4935 Timestamp:3701250 Size:53 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=240, skip=false
-  Bucket 1: backlog=178, deficit=1447, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 373, Size: 47554, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:4980 Timestamp:3735000 Size:58 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=927, skip=false
-  Bucket 1: backlog=176, deficit=1459, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 373, Size: 47839, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5021 Timestamp:3765750 Size:45 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1492, skip=false
-  Bucket 1: backlog=180, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 375, Size: 47900, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5085 Timestamp:3813750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1278, skip=false
-  Bucket 1: backlog=172, deficit=1460, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47974, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5141 Timestamp:3855750 Size:41 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1189, skip=false
-  Bucket 1: backlog=164, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47790, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5182 Timestamp:3886500 Size:60 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1297, skip=false
-  Bucket 1: backlog=170, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47895, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5241 Timestamp:3930750 Size:52 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=992, skip=false
-  Bucket 1: backlog=166, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47864, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5287 Timestamp:3965250 Size:50 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1063, skip=false
-  Bucket 1: backlog=171, deficit=1463, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47815, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5346 Timestamp:4009500 Size:54 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=822, skip=false
-  Bucket 1: backlog=168, deficit=1456, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47888, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5391 Timestamp:4043250 Size:45 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1337, skip=false
-  Bucket 1: backlog=165, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47881, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5434 Timestamp:4075500 Size:56 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=1398, skip=false
-  Bucket 1: backlog=171, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47917, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5492 Timestamp:4119000 Size:59 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1357, skip=false
-  Bucket 1: backlog=166, deficit=1449, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47980, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5553 Timestamp:4164750 Size:44 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1014, skip=false
-  Bucket 1: backlog=160, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47803, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5598 Timestamp:4198500 Size:52 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=489, skip=false
-  Bucket 1: backlog=164, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47992, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5651 Timestamp:4238250 Size:56 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=386, skip=false
-  Bucket 1: backlog=166, deficit=1480, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47899, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5688 Timestamp:4266000 Size:44 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1070, skip=false
-  Bucket 1: backlog=169, deficit=1489, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47990, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5741 Timestamp:4305750 Size:45 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1215, skip=false
-  Bucket 1: backlog=167, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47834, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5798 Timestamp:4348500 Size:47 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=929, skip=false
-  Bucket 1: backlog=166, deficit=1481, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47788, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5846 Timestamp:4384500 Size:42 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1465, skip=false
-  Bucket 1: backlog=165, deficit=1475, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47935, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5900 Timestamp:4425000 Size:56 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1190, skip=false
-  Bucket 1: backlog=163, deficit=1489, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47910, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:5944 Timestamp:4458000 Size:40 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1281, skip=false
-  Bucket 1: backlog=168, deficit=1465, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47893, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6009 Timestamp:4506750 Size:54 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1480, skip=false
-  Bucket 1: backlog=154, deficit=1464, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47871, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6059 Timestamp:4544250 Size:41 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=1186, skip=false
-  Bucket 1: backlog=154, deficit=1458, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47854, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6106 Timestamp:4579500 Size:50 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=444, skip=false
-  Bucket 1: backlog=163, deficit=1462, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47912, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6141 Timestamp:4605750 Size:41 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1341, skip=false
-  Bucket 1: backlog=168, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 369, Size: 47952, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6199 Timestamp:4649250 Size:43 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1135, skip=false
-  Bucket 1: backlog=171, deficit=1499, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 370, Size: 47995, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6261 Timestamp:4695750 Size:50 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=227, skip=false
-  Bucket 1: backlog=165, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47952, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6307 Timestamp:4730250 Size:52 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1290, skip=false
-  Bucket 1: backlog=160, deficit=1466, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47957, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6358 Timestamp:4768500 Size:55 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1393, skip=false
-  Bucket 1: backlog=156, deficit=1461, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47886, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6403 Timestamp:4802250 Size:46 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1133, skip=false
-  Bucket 1: backlog=161, deficit=1468, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47889, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6460 Timestamp:4845000 Size:43 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1140, skip=false
-  Bucket 1: backlog=159, deficit=1481, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47786, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6502 Timestamp:4876500 Size:58 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=629, skip=false
-  Bucket 1: backlog=164, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47862, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6541 Timestamp:4905750 Size:45 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=793, skip=false
-  Bucket 1: backlog=173, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 370, Size: 47833, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6588 Timestamp:4941000 Size:50 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1365, skip=false
-  Bucket 1: backlog=171, deficit=1468, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47993, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6642 Timestamp:4981500 Size:50 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1487, skip=false
-  Bucket 1: backlog=170, deficit=1450, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47907, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6712 Timestamp:5034000 Size:57 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1151, skip=false
+  Bucket 0: backlog=199, deficit=1227, skip=false
   Bucket 1: backlog=155, deficit=1482, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47830, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6761 Timestamp:5070750 Size:50 Hash:1}
+  Queue state (Bulk), Length: 354, Size: 47990, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1079 Timestamp:809250 Size:54 Hash:1}
 ):
-  Bucket 0: backlog=202, deficit=956, skip=false
-  Bucket 1: backlog=156, deficit=1478, skip=false
+  Bucket 0: backlog=198, deficit=1067, skip=false
+  Bucket 1: backlog=160, deficit=1495, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47907, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6819 Timestamp:5114250 Size:40 Hash:1}
+  Queue state (Bulk), Length: 358, Size: 47809, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1141 Timestamp:855750 Size:53 Hash:1}
 ):
-  Bucket 0: backlog=202, deficit=481, skip=false
-  Bucket 1: backlog=155, deficit=1465, skip=false
+  Bucket 0: backlog=197, deficit=1466, skip=true
+  Bucket 1: backlog=165, deficit=1457, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47790, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6865 Timestamp:5148750 Size:57 Hash:1}
+  Queue state (Bulk), Length: 362, Size: 47757, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1191 Timestamp:893250 Size:44 Hash:1}
 ):
-  Bucket 0: backlog=202, deficit=1016, skip=false
-  Bucket 1: backlog=153, deficit=1494, skip=false
+  Bucket 0: backlog=199, deficit=1046, skip=false
+  Bucket 1: backlog=158, deficit=1458, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47898, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6914 Timestamp:5185500 Size:52 Hash:1}
+  Queue state (Bulk), Length: 357, Size: 47843, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1231 Timestamp:923250 Size:44 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=1346, skip=false
-  Bucket 1: backlog=154, deficit=1451, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47868, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:6963 Timestamp:5222250 Size:56 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=123, skip=false
-  Bucket 1: backlog=163, deficit=1449, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47689, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7007 Timestamp:5255250 Size:55 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1400, skip=false
-  Bucket 1: backlog=155, deficit=1479, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47932, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7045 Timestamp:5283750 Size:41 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=934, skip=false
-  Bucket 1: backlog=166, deficit=1484, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47831, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7101 Timestamp:5325750 Size:41 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=729, skip=false
-  Bucket 1: backlog=169, deficit=1473, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47874, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7144 Timestamp:5358000 Size:52 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=349, skip=false
-  Bucket 1: backlog=178, deficit=1470, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 375, Size: 47827, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7190 Timestamp:5392500 Size:58 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=623, skip=false
-  Bucket 1: backlog=180, deficit=1483, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 380, Size: 47993, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7241 Timestamp:5430750 Size:44 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=981, skip=false
-  Bucket 1: backlog=177, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 380, Size: 47949, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7296 Timestamp:5472000 Size:50 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=1184, skip=false
-  Bucket 1: backlog=173, deficit=1450, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 375, Size: 47745, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7354 Timestamp:5515500 Size:59 Hash:1}
-):
-  Bucket 0: backlog=204, deficit=1306, skip=false
-  Bucket 1: backlog=164, deficit=1468, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47856, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7402 Timestamp:5551500 Size:49 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=762, skip=false
-  Bucket 1: backlog=166, deficit=1488, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47895, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7451 Timestamp:5588250 Size:48 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1444, skip=false
-  Bucket 1: backlog=163, deficit=1455, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47898, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7512 Timestamp:5634000 Size:42 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1427, skip=true
-  Bucket 1: backlog=166, deficit=1469, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47918, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7556 Timestamp:5667000 Size:56 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=958, skip=false
-  Bucket 1: backlog=163, deficit=1461, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47565, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7615 Timestamp:5711250 Size:55 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=1480, skip=false
-  Bucket 1: backlog=150, deficit=1475, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 353, Size: 47985, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7712 Timestamp:5784000 Size:59 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=742, skip=false
-  Bucket 1: backlog=155, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 353, Size: 47703, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7751 Timestamp:5813250 Size:48 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1207, skip=false
-  Bucket 1: backlog=160, deficit=1457, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47974, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7799 Timestamp:5849250 Size:53 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1344, skip=false
-  Bucket 1: backlog=160, deficit=1456, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47834, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7861 Timestamp:5895750 Size:58 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1406, skip=true
-  Bucket 1: backlog=166, deficit=1457, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47975, ScanIndex: 1
-LFQ state dump (reason: late send for packet &{Seqno:7900 Timestamp:5925000 Size:46 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1406, skip=false
-  Bucket 1: backlog=161, deficit=1461, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47853, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:7957 Timestamp:5967750 Size:46 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1371, skip=true
-  Bucket 1: backlog=171, deficit=1453, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 370, Size: 47991, ScanIndex: 1
-LFQ state dump (reason: late send for packet &{Seqno:8001 Timestamp:6000750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1047, skip=false
-  Bucket 1: backlog=165, deficit=1459, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47857, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8045 Timestamp:6033750 Size:49 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1153, skip=false
-  Bucket 1: backlog=170, deficit=1478, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47744, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8092 Timestamp:6069000 Size:55 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1418, skip=false
-  Bucket 1: backlog=174, deficit=1461, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 369, Size: 47823, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8139 Timestamp:6104250 Size:59 Hash:1}
-):
-  Bucket 0: backlog=192, deficit=767, skip=false
-  Bucket 1: backlog=181, deficit=1499, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 373, Size: 47709, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8199 Timestamp:6149250 Size:45 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1072, skip=false
-  Bucket 1: backlog=168, deficit=1458, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47805, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8261 Timestamp:6195750 Size:42 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=569, skip=false
-  Bucket 1: backlog=158, deficit=1496, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47972, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8309 Timestamp:6231750 Size:49 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1477, skip=false
-  Bucket 1: backlog=155, deficit=1457, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47968, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8360 Timestamp:6270000 Size:43 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=394, skip=false
-  Bucket 1: backlog=164, deficit=1481, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47786, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8394 Timestamp:6295500 Size:59 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1292, skip=false
-  Bucket 1: backlog=166, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47968, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8442 Timestamp:6331500 Size:56 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1426, skip=false
-  Bucket 1: backlog=168, deficit=1460, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47881, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8490 Timestamp:6367500 Size:52 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=1080, skip=false
-  Bucket 1: backlog=172, deficit=1455, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47906, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8548 Timestamp:6411000 Size:53 Hash:1}
-):
-  Bucket 0: backlog=193, deficit=774, skip=false
-  Bucket 1: backlog=171, deficit=1478, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47659, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8586 Timestamp:6439500 Size:60 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1376, skip=false
-  Bucket 1: backlog=170, deficit=1449, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47898, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8642 Timestamp:6481500 Size:57 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1326, skip=false
-  Bucket 1: backlog=169, deficit=1493, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47901, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8707 Timestamp:6530250 Size:41 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1278, skip=false
-  Bucket 1: backlog=158, deficit=1488, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47999, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8769 Timestamp:6576750 Size:59 Hash:1}
-):
-  Bucket 0: backlog=204, deficit=1010, skip=false
-  Bucket 1: backlog=147, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 351, Size: 47974, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8818 Timestamp:6613500 Size:54 Hash:1}
-):
-  Bucket 0: backlog=204, deficit=793, skip=false
-  Bucket 1: backlog=148, deficit=1480, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 352, Size: 47979, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8872 Timestamp:6654000 Size:50 Hash:1}
-):
-  Bucket 0: backlog=205, deficit=1477, skip=true
-  Bucket 1: backlog=152, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47872, ScanIndex: 1
-LFQ state dump (reason: late send for packet &{Seqno:8907 Timestamp:6680250 Size:53 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=1302, skip=false
-  Bucket 1: backlog=151, deficit=1479, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47981, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:8953 Timestamp:6714750 Size:54 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1346, skip=false
-  Bucket 1: backlog=155, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47910, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9009 Timestamp:6756750 Size:50 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1479, skip=false
-  Bucket 1: backlog=150, deficit=1465, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 350, Size: 47965, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9048 Timestamp:6786000 Size:48 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=868, skip=false
-  Bucket 1: backlog=166, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47925, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9095 Timestamp:6821250 Size:60 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=998, skip=false
-  Bucket 1: backlog=167, deficit=1477, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47785, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9142 Timestamp:6856500 Size:43 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1242, skip=false
-  Bucket 1: backlog=166, deficit=1478, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47873, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9202 Timestamp:6901500 Size:54 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1435, skip=false
-  Bucket 1: backlog=156, deficit=1467, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47977, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9262 Timestamp:6946500 Size:60 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1002, skip=false
-  Bucket 1: backlog=155, deficit=1445, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47941, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9301 Timestamp:6975750 Size:50 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1437, skip=false
-  Bucket 1: backlog=157, deficit=1468, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47812, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9341 Timestamp:7005750 Size:49 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1286, skip=false
-  Bucket 1: backlog=167, deficit=1462, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47795, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9390 Timestamp:7042500 Size:42 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=1092, skip=false
-  Bucket 1: backlog=172, deficit=1447, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47893, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9449 Timestamp:7086750 Size:52 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=868, skip=false
-  Bucket 1: backlog=164, deficit=1486, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47963, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9503 Timestamp:7127250 Size:51 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1057, skip=false
-  Bucket 1: backlog=161, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47858, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9546 Timestamp:7159500 Size:60 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1154, skip=false
-  Bucket 1: backlog=168, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47860, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9596 Timestamp:7197000 Size:41 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1470, skip=false
-  Bucket 1: backlog=160, deficit=1487, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47892, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9642 Timestamp:7231500 Size:54 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1031, skip=false
-  Bucket 1: backlog=168, deficit=1461, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47739, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9684 Timestamp:7263000 Size:48 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1100, skip=false
-  Bucket 1: backlog=177, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 372, Size: 47988, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9732 Timestamp:7299000 Size:50 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1355, skip=false
-  Bucket 1: backlog=176, deficit=1474, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47941, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9788 Timestamp:7341000 Size:53 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1355, skip=false
-  Bucket 1: backlog=170, deficit=1498, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47851, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9847 Timestamp:7385250 Size:44 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1274, skip=false
-  Bucket 1: backlog=164, deficit=1451, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47995, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9902 Timestamp:7426500 Size:55 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1192, skip=false
-  Bucket 1: backlog=163, deficit=1473, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47863, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:9947 Timestamp:7460250 Size:43 Hash:1}
-):
-  Bucket 0: backlog=194, deficit=1308, skip=true
-  Bucket 1: backlog=181, deficit=1471, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 375, Size: 47932, ScanIndex: 1
-LFQ state dump (reason: late send for packet &{Seqno:9996 Timestamp:7497000 Size:44 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=670, skip=false
-  Bucket 1: backlog=177, deficit=1459, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 373, Size: 47884, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10032 Timestamp:7524000 Size:44 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1342, skip=false
-  Bucket 1: backlog=179, deficit=1494, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 376, Size: 47820, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10086 Timestamp:7564500 Size:50 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=983, skip=false
-  Bucket 1: backlog=182, deficit=1476, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 377, Size: 47907, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10146 Timestamp:7609500 Size:60 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=369, skip=false
-  Bucket 1: backlog=175, deficit=1496, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 370, Size: 47888, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10191 Timestamp:7643250 Size:46 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1460, skip=false
-  Bucket 1: backlog=172, deficit=1458, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 368, Size: 47996, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10247 Timestamp:7685250 Size:47 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1458, skip=false
-  Bucket 1: backlog=164, deficit=1462, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47968, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10304 Timestamp:7728000 Size:55 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1149, skip=false
-  Bucket 1: backlog=162, deficit=1461, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47941, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10362 Timestamp:7771500 Size:50 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1181, skip=false
-  Bucket 1: backlog=151, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 352, Size: 47942, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10415 Timestamp:7811250 Size:47 Hash:1}
-):
-  Bucket 0: backlog=201, deficit=1385, skip=false
-  Bucket 1: backlog=151, deficit=1479, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 352, Size: 47906, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10465 Timestamp:7848750 Size:52 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=829, skip=false
-  Bucket 1: backlog=151, deficit=1457, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 349, Size: 47622, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10506 Timestamp:7879500 Size:59 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1360, skip=false
-  Bucket 1: backlog=152, deficit=1479, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 351, Size: 47888, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10560 Timestamp:7920000 Size:44 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1303, skip=false
-  Bucket 1: backlog=150, deficit=1463, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 348, Size: 47874, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10601 Timestamp:7950750 Size:58 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1281, skip=false
-  Bucket 1: backlog=159, deficit=1475, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47868, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10655 Timestamp:7991250 Size:54 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=778, skip=false
-  Bucket 1: backlog=164, deficit=1476, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47981, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10705 Timestamp:8028750 Size:59 Hash:1}
-):
-  Bucket 0: backlog=203, deficit=1394, skip=false
-  Bucket 1: backlog=159, deficit=1477, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47928, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10759 Timestamp:8069250 Size:43 Hash:1}
-):
-  Bucket 0: backlog=202, deficit=838, skip=false
-  Bucket 1: backlog=161, deficit=1463, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 363, Size: 47905, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10793 Timestamp:8094750 Size:57 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1281, skip=false
-  Bucket 1: backlog=171, deficit=1472, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47865, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10842 Timestamp:8131500 Size:42 Hash:1}
-):
-  Bucket 0: backlog=196, deficit=1447, skip=false
-  Bucket 1: backlog=175, deficit=1454, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47919, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10889 Timestamp:8166750 Size:41 Hash:1}
-):
-  Bucket 0: backlog=192, deficit=952, skip=false
-  Bucket 1: backlog=182, deficit=1478, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 374, Size: 47631, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:10964 Timestamp:8223000 Size:49 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=860, skip=false
-  Bucket 1: backlog=162, deficit=1485, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47975, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11012 Timestamp:8259000 Size:45 Hash:1}
-):
-  Bucket 0: backlog=199, deficit=1327, skip=false
-  Bucket 1: backlog=155, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47920, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11063 Timestamp:8297250 Size:52 Hash:1}
-):
-  Bucket 0: backlog=200, deficit=1177, skip=false
-  Bucket 1: backlog=156, deficit=1492, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47871, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11105 Timestamp:8328750 Size:54 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=798, skip=false
-  Bucket 1: backlog=165, deficit=1482, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47692, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11156 Timestamp:8367000 Size:40 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=635, skip=false
-  Bucket 1: backlog=167, deficit=1489, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47820, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11209 Timestamp:8406750 Size:53 Hash:1}
-):
-  Bucket 0: backlog=198, deficit=1102, skip=false
-  Bucket 1: backlog=162, deficit=1452, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47917, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11252 Timestamp:8439000 Size:46 Hash:1}
-):
-  Bucket 0: backlog=195, deficit=1436, skip=false
-  Bucket 1: backlog=166, deficit=1449, skip=false
-  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47997, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11308 Timestamp:8481000 Size:50 Hash:1}
-):
-  Bucket 0: backlog=197, deficit=1295, skip=false
+  Bucket 0: backlog=200, deficit=1388, skip=false
   Bucket 1: backlog=162, deficit=1497, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 359, Size: 47875, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11360 Timestamp:8520000 Size:58 Hash:1}
+  Queue state (Bulk), Length: 362, Size: 47967, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1291 Timestamp:968250 Size:59 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=592, skip=false
-  Bucket 1: backlog=166, deficit=1448, skip=false
+  Bucket 0: backlog=201, deficit=1126, skip=false
+  Bucket 1: backlog=155, deficit=1479, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47829, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11406 Timestamp:8554500 Size:47 Hash:1}
+  Queue state (Bulk), Length: 356, Size: 47856, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1344 Timestamp:1008000 Size:58 Hash:1}
 ):
-  Bucket 0: backlog=199, deficit=1085, skip=false
-  Bucket 1: backlog=161, deficit=1475, skip=false
+  Bucket 0: backlog=198, deficit=8, skip=false
+  Bucket 1: backlog=165, deficit=1491, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47939, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11467 Timestamp:8600250 Size:50 Hash:1}
+  Queue state (Bulk), Length: 363, Size: 47856, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1388 Timestamp:1041000 Size:41 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=1431, skip=true
-  Bucket 1: backlog=160, deficit=1448, skip=false
+  Bucket 0: backlog=198, deficit=1260, skip=false
+  Bucket 1: backlog=156, deficit=1467, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47609, ScanIndex: 4
-LFQ state dump (reason: late send for packet &{Seqno:11514 Timestamp:8635500 Size:55 Hash:1}
+  Queue state (Bulk), Length: 354, Size: 47872, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1429 Timestamp:1071750 Size:41 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=45, skip=false
-  Bucket 1: backlog=159, deficit=1499, skip=false
+  Bucket 0: backlog=197, deficit=1090, skip=false
+  Bucket 1: backlog=165, deficit=1446, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47786, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11553 Timestamp:8664750 Size:44 Hash:1}
+  Queue state (Bulk), Length: 362, Size: 47974, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1477 Timestamp:1107750 Size:48 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=850, skip=false
-  Bucket 1: backlog=159, deficit=1483, skip=false
+  Bucket 0: backlog=196, deficit=1277, skip=false
+  Bucket 1: backlog=164, deficit=1479, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47603, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11605 Timestamp:8703750 Size:57 Hash:1}
+  Queue state (Bulk), Length: 360, Size: 47809, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1532 Timestamp:1149000 Size:42 Hash:1}
 ):
-  Bucket 0: backlog=201, deficit=1052, skip=false
-  Bucket 1: backlog=161, deficit=1488, skip=false
+  Bucket 0: backlog=196, deficit=1427, skip=false
+  Bucket 1: backlog=163, deficit=1465, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 362, Size: 47930, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11651 Timestamp:8738250 Size:48 Hash:1}
+  Queue state (Bulk), Length: 359, Size: 47911, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1593 Timestamp:1194750 Size:55 Hash:1}
 ):
-  Bucket 0: backlog=202, deficit=315, skip=false
-  Bucket 1: backlog=165, deficit=1449, skip=false
+  Bucket 0: backlog=200, deficit=448, skip=false
+  Bucket 1: backlog=160, deficit=1499, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47974, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11694 Timestamp:8770500 Size:49 Hash:1}
+  Queue state (Bulk), Length: 360, Size: 47968, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1635 Timestamp:1226250 Size:44 Hash:1}
 ):
-  Bucket 0: backlog=199, deficit=1205, skip=false
-  Bucket 1: backlog=166, deficit=1477, skip=false
+  Bucket 0: backlog=199, deficit=1305, skip=false
+  Bucket 1: backlog=158, deficit=1496, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47851, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11741 Timestamp:8805750 Size:46 Hash:1}
+  Queue state (Bulk), Length: 357, Size: 47798, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1698 Timestamp:1273500 Size:60 Hash:1}
 ):
-  Bucket 0: backlog=196, deficit=1297, skip=false
-  Bucket 1: backlog=173, deficit=1460, skip=false
+  Bucket 0: backlog=201, deficit=281, skip=false
+  Bucket 1: backlog=156, deficit=1497, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 369, Size: 47874, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11805 Timestamp:8853750 Size:57 Hash:1}
+  Queue state (Bulk), Length: 357, Size: 47956, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1745 Timestamp:1308750 Size:56 Hash:1}
 ):
-  Bucket 0: backlog=195, deficit=1407, skip=true
-  Bucket 1: backlog=174, deficit=1461, skip=false
+  Bucket 0: backlog=201, deficit=938, skip=false
+  Bucket 1: backlog=146, deficit=1482, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 369, Size: 47884, ScanIndex: 2
-LFQ state dump (reason: late send for packet &{Seqno:11839 Timestamp:8879250 Size:49 Hash:1}
+  Queue state (Bulk), Length: 347, Size: 47879, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1804 Timestamp:1353000 Size:53 Hash:1}
 ):
-  Bucket 0: backlog=196, deficit=1407, skip=false
-  Bucket 1: backlog=170, deficit=1479, skip=false
+  Bucket 0: backlog=202, deficit=1041, skip=false
+  Bucket 1: backlog=140, deficit=1449, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 366, Size: 47977, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11906 Timestamp:8929500 Size:55 Hash:1}
+  Queue state (Bulk), Length: 342, Size: 47836, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1848 Timestamp:1386000 Size:44 Hash:1}
 ):
-  Bucket 0: backlog=199, deficit=1347, skip=false
-  Bucket 1: backlog=159, deficit=1491, skip=false
+  Bucket 0: backlog=200, deficit=628, skip=false
+  Bucket 1: backlog=146, deficit=1493, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47785, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:11956 Timestamp:8967000 Size:58 Hash:1}
+  Queue state (Bulk), Length: 346, Size: 47849, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1891 Timestamp:1418250 Size:60 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=1432, skip=false
-  Bucket 1: backlog=155, deficit=1498, skip=false
+  Bucket 0: backlog=200, deficit=110, skip=false
+  Bucket 1: backlog=154, deficit=1499, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 355, Size: 47964, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12024 Timestamp:9018000 Size:44 Hash:1}
+  Queue state (Bulk), Length: 354, Size: 47934, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1928 Timestamp:1446000 Size:48 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=629, skip=false
-  Bucket 1: backlog=151, deficit=1495, skip=false
+  Bucket 0: backlog=202, deficit=1370, skip=false
+  Bucket 1: backlog=152, deficit=1467, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 351, Size: 47999, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12058 Timestamp:9043500 Size:58 Hash:1}
+  Queue state (Bulk), Length: 354, Size: 47829, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:1967 Timestamp:1475250 Size:45 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=1415, skip=false
-  Bucket 1: backlog=153, deficit=1499, skip=false
+  Bucket 0: backlog=198, deficit=1145, skip=false
+  Bucket 1: backlog=165, deficit=1460, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 353, Size: 47859, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12113 Timestamp:9084750 Size:51 Hash:1}
+  Queue state (Bulk), Length: 363, Size: 47886, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2016 Timestamp:1512000 Size:49 Hash:1}
 ):
-  Bucket 0: backlog=202, deficit=1372, skip=false
-  Bucket 1: backlog=150, deficit=1484, skip=false
+  Bucket 0: backlog=195, deficit=1243, skip=false
+  Bucket 1: backlog=168, deficit=1484, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 352, Size: 47903, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12166 Timestamp:9124500 Size:51 Hash:1}
+  Queue state (Bulk), Length: 363, Size: 47945, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2062 Timestamp:1546500 Size:43 Hash:1}
 ):
-  Bucket 0: backlog=202, deficit=1176, skip=false
-  Bucket 1: backlog=148, deficit=1482, skip=false
+  Bucket 0: backlog=193, deficit=1064, skip=false
+  Bucket 1: backlog=177, deficit=1462, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 350, Size: 47850, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12220 Timestamp:9165000 Size:53 Hash:1}
+  Queue state (Bulk), Length: 370, Size: 47868, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2105 Timestamp:1578750 Size:56 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=1262, skip=false
-  Bucket 1: backlog=144, deficit=1493, skip=false
+  Bucket 0: backlog=191, deficit=1215, skip=false
+  Bucket 1: backlog=182, deficit=1481, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 344, Size: 47961, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12269 Timestamp:9201750 Size:59 Hash:1}
+  Queue state (Bulk), Length: 373, Size: 47888, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2166 Timestamp:1624500 Size:48 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=1344, skip=true
-  Bucket 1: backlog=157, deficit=1484, skip=false
+  Bucket 0: backlog=191, deficit=240, skip=false
+  Bucket 1: backlog=183, deficit=1466, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47940, ScanIndex: 1
-LFQ state dump (reason: late send for packet &{Seqno:12316 Timestamp:9237000 Size:52 Hash:1}
+  Queue state (Bulk), Length: 374, Size: 47779, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2224 Timestamp:1668000 Size:60 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=285, skip=false
-  Bucket 1: backlog=159, deficit=1471, skip=false
+  Bucket 0: backlog=194, deficit=1407, skip=true
+  Bucket 1: backlog=176, deficit=1481, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 357, Size: 47901, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12359 Timestamp:9269250 Size:41 Hash:1}
+  Queue state (Bulk), Length: 370, Size: 47957, ScanIndex: 2
+LFQ state dump (reason: late packet &{Seqno:2253 Timestamp:1689750 Size:54 Hash:1}
 ):
-  Bucket 0: backlog=201, deficit=1423, skip=false
-  Bucket 1: backlog=155, deficit=1468, skip=false
+  Bucket 0: backlog=193, deficit=1407, skip=false
+  Bucket 1: backlog=177, deficit=1486, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 356, Size: 47781, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12404 Timestamp:9303000 Size:42 Hash:1}
+  Queue state (Bulk), Length: 370, Size: 47993, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2318 Timestamp:1738500 Size:43 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=856, skip=false
+  Bucket 1: backlog=176, deficit=1445, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 373, Size: 47957, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2368 Timestamp:1776000 Size:43 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1343, skip=false
+  Bucket 1: backlog=167, deficit=1476, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47917, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2430 Timestamp:1822500 Size:42 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=620, skip=false
+  Bucket 1: backlog=163, deficit=1477, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47898, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2483 Timestamp:1862250 Size:60 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=113, skip=false
+  Bucket 1: backlog=165, deficit=1454, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47987, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2516 Timestamp:1887000 Size:53 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=651, skip=false
+  Bucket 1: backlog=170, deficit=1473, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47818, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2574 Timestamp:1930500 Size:51 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=1477, skip=true
+  Bucket 1: backlog=172, deficit=1483, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47598, ScanIndex: 2
+LFQ state dump (reason: late packet &{Seqno:2626 Timestamp:1969500 Size:48 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1423, skip=true
+  Bucket 1: backlog=176, deficit=1465, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47909, ScanIndex: 3
+LFQ state dump (reason: late packet &{Seqno:2661 Timestamp:1995750 Size:49 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1007, skip=false
+  Bucket 1: backlog=176, deficit=1485, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 373, Size: 47860, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2714 Timestamp:2035500 Size:52 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=940, skip=false
+  Bucket 1: backlog=177, deficit=1499, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 374, Size: 47684, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2776 Timestamp:2082000 Size:40 Hash:1}
 ):
   Bucket 0: backlog=202, deficit=1280, skip=false
-  Bucket 1: backlog=158, deficit=1468, skip=false
+  Bucket 1: backlog=164, deficit=1481, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47865, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12455 Timestamp:9341250 Size:51 Hash:1}
+  Queue state (Bulk), Length: 366, Size: 47969, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2818 Timestamp:2113500 Size:51 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=803, skip=false
-  Bucket 1: backlog=165, deficit=1472, skip=false
+  Bucket 0: backlog=202, deficit=1448, skip=false
+  Bucket 1: backlog=166, deficit=1487, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47903, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12503 Timestamp:9377250 Size:50 Hash:1}
+  Queue state (Bulk), Length: 368, Size: 47939, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2892 Timestamp:2169000 Size:45 Hash:1}
 ):
-  Bucket 0: backlog=203, deficit=1304, skip=false
-  Bucket 1: backlog=161, deficit=1494, skip=false
+  Bucket 0: backlog=200, deficit=319, skip=false
+  Bucket 1: backlog=160, deficit=1455, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 364, Size: 47965, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12550 Timestamp:9412500 Size:57 Hash:1}
+  Queue state (Bulk), Length: 360, Size: 47978, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2929 Timestamp:2196750 Size:50 Hash:1}
 ):
-  Bucket 0: backlog=199, deficit=1346, skip=false
+  Bucket 0: backlog=199, deficit=1279, skip=false
+  Bucket 1: backlog=162, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47964, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:2975 Timestamp:2231250 Size:57 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1241, skip=false
+  Bucket 1: backlog=167, deficit=1488, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47977, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3023 Timestamp:2267250 Size:56 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1478, skip=false
+  Bucket 1: backlog=168, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47983, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3063 Timestamp:2297250 Size:60 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1497, skip=false
+  Bucket 1: backlog=175, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47980, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3119 Timestamp:2339250 Size:47 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=646, skip=false
+  Bucket 1: backlog=180, deficit=1493, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 374, Size: 47687, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3168 Timestamp:2376000 Size:49 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=841, skip=false
+  Bucket 1: backlog=178, deficit=1459, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 374, Size: 47915, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3293 Timestamp:2469750 Size:41 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1133, skip=false
+  Bucket 1: backlog=157, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 358, Size: 47904, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3399 Timestamp:2549250 Size:48 Hash:1}
+):
+  Bucket 0: backlog=204, deficit=1415, skip=false
+  Bucket 1: backlog=146, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 350, Size: 47822, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3441 Timestamp:2580750 Size:42 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1495, skip=true
+  Bucket 1: backlog=162, deficit=1467, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 359, Size: 47583, ScanIndex: 1
+LFQ state dump (reason: late packet &{Seqno:3483 Timestamp:2612250 Size:51 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1454, skip=true
+  Bucket 1: backlog=170, deficit=1470, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47942, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3520 Timestamp:2640000 Size:54 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1239, skip=false
+  Bucket 1: backlog=171, deficit=1469, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47879, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3572 Timestamp:2679000 Size:43 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=847, skip=false
+  Bucket 1: backlog=176, deficit=1453, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47955, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3625 Timestamp:2718750 Size:50 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1287, skip=false
+  Bucket 1: backlog=170, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47948, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3687 Timestamp:2765250 Size:43 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1180, skip=false
+  Bucket 1: backlog=162, deficit=1470, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47811, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3748 Timestamp:2811000 Size:41 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=662, skip=false
+  Bucket 1: backlog=155, deficit=1487, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 354, Size: 47824, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3799 Timestamp:2849250 Size:59 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=225, skip=false
+  Bucket 1: backlog=157, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 358, Size: 47969, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3842 Timestamp:2881500 Size:59 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1432, skip=true
+  Bucket 1: backlog=161, deficit=1461, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47718, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3874 Timestamp:2905500 Size:45 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1197, skip=false
+  Bucket 1: backlog=164, deficit=1489, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47910, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3912 Timestamp:2934000 Size:55 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1019, skip=false
+  Bucket 1: backlog=178, deficit=1493, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 375, Size: 47684, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:3970 Timestamp:2977500 Size:55 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1254, skip=false
+  Bucket 1: backlog=177, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47680, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4027 Timestamp:3020250 Size:43 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1092, skip=false
+  Bucket 1: backlog=171, deficit=1459, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47866, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4085 Timestamp:3063750 Size:45 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1259, skip=false
+  Bucket 1: backlog=162, deficit=1442, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 358, Size: 47909, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4135 Timestamp:3101250 Size:45 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=663, skip=false
+  Bucket 1: backlog=165, deficit=1476, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47893, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4198 Timestamp:3148500 Size:42 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=260, skip=false
+  Bucket 1: backlog=154, deficit=1497, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47958, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4243 Timestamp:3182250 Size:57 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=927, skip=false
+  Bucket 1: backlog=150, deficit=1485, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 351, Size: 47925, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4296 Timestamp:3222000 Size:60 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=952, skip=false
+  Bucket 1: backlog=149, deficit=1470, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 352, Size: 47822, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4335 Timestamp:3251250 Size:55 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1427, skip=false
+  Bucket 1: backlog=154, deficit=1457, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47941, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4389 Timestamp:3291750 Size:56 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=561, skip=false
+  Bucket 1: backlog=164, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47986, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4431 Timestamp:3323250 Size:58 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1328, skip=false
+  Bucket 1: backlog=162, deficit=1496, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 357, Size: 47851, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4496 Timestamp:3372000 Size:57 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1351, skip=true
+  Bucket 1: backlog=164, deficit=1461, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47970, ScanIndex: 1
+LFQ state dump (reason: late packet &{Seqno:4544 Timestamp:3408000 Size:42 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1403, skip=true
+  Bucket 1: backlog=162, deficit=1460, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47747, ScanIndex: 2
+LFQ state dump (reason: late packet &{Seqno:4592 Timestamp:3444000 Size:40 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=1403, skip=false
+  Bucket 1: backlog=145, deficit=1467, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 348, Size: 47887, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4637 Timestamp:3477750 Size:55 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1092, skip=false
+  Bucket 1: backlog=153, deficit=1490, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47741, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4691 Timestamp:3518250 Size:59 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1229, skip=false
+  Bucket 1: backlog=153, deficit=1442, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 354, Size: 47826, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4726 Timestamp:3544500 Size:52 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=731, skip=false
+  Bucket 1: backlog=164, deficit=1499, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47694, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4789 Timestamp:3591750 Size:54 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1369, skip=true
   Bucket 1: backlog=168, deficit=1465, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47933, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12613 Timestamp:9459750 Size:48 Hash:1}
+  Queue state (Bulk), Length: 364, Size: 47898, ScanIndex: 2
+LFQ state dump (reason: late packet &{Seqno:4830 Timestamp:3622500 Size:56 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=499, skip=false
-  Bucket 1: backlog=163, deficit=1453, skip=false
+  Bucket 0: backlog=197, deficit=741, skip=false
+  Bucket 1: backlog=165, deficit=1498, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47626, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12640 Timestamp:9480000 Size:58 Hash:1}
+  Queue state (Bulk), Length: 362, Size: 47965, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4888 Timestamp:3666000 Size:53 Hash:1}
 ):
-  Bucket 0: backlog=195, deficit=1138, skip=false
-  Bucket 1: backlog=174, deficit=1484, skip=false
+  Bucket 0: backlog=196, deficit=1058, skip=false
+  Bucket 1: backlog=158, deficit=1461, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 369, Size: 47863, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12687 Timestamp:9515250 Size:50 Hash:1}
+  Queue state (Bulk), Length: 354, Size: 47907, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:4997 Timestamp:3747750 Size:51 Hash:1}
 ):
-  Bucket 0: backlog=193, deficit=1155, skip=false
-  Bucket 1: backlog=179, deficit=1493, skip=false
+  Bucket 0: backlog=203, deficit=1400, skip=false
+  Bucket 1: backlog=143, deficit=1444, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 372, Size: 47997, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12740 Timestamp:9555000 Size:46 Hash:1}
+  Queue state (Bulk), Length: 346, Size: 47864, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5043 Timestamp:3782250 Size:52 Hash:1}
 ):
-  Bucket 0: backlog=190, deficit=1277, skip=false
-  Bucket 1: backlog=177, deficit=1481, skip=false
+  Bucket 0: backlog=203, deficit=1179, skip=false
+  Bucket 1: backlog=148, deficit=1460, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47824, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12803 Timestamp:9602250 Size:60 Hash:1}
+  Queue state (Bulk), Length: 351, Size: 47836, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5084 Timestamp:3813000 Size:52 Hash:1}
 ):
-  Bucket 0: backlog=194, deficit=1116, skip=false
-  Bucket 1: backlog=166, deficit=1496, skip=false
+  Bucket 0: backlog=202, deficit=1454, skip=false
+  Bucket 1: backlog=148, deficit=1496, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 360, Size: 47857, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12848 Timestamp:9636000 Size:58 Hash:1}
+  Queue state (Bulk), Length: 350, Size: 47931, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5129 Timestamp:3846750 Size:59 Hash:1}
 ):
-  Bucket 0: backlog=195, deficit=1372, skip=false
-  Bucket 1: backlog=170, deficit=1494, skip=false
+  Bucket 0: backlog=198, deficit=1061, skip=false
+  Bucket 1: backlog=158, deficit=1478, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 365, Size: 47978, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12889 Timestamp:9666750 Size:40 Hash:1}
+  Queue state (Bulk), Length: 356, Size: 47917, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5184 Timestamp:3888000 Size:57 Hash:1}
 ):
-  Bucket 0: backlog=196, deficit=1307, skip=false
-  Bucket 1: backlog=175, deficit=1472, skip=false
+  Bucket 0: backlog=194, deficit=164, skip=false
+  Bucket 1: backlog=165, deficit=1494, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 371, Size: 47902, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12943 Timestamp:9707250 Size:44 Hash:1}
+  Queue state (Bulk), Length: 359, Size: 47787, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5217 Timestamp:3912750 Size:51 Hash:1}
 ):
-  Bucket 0: backlog=197, deficit=932, skip=false
-  Bucket 1: backlog=177, deficit=1495, skip=false
+  Bucket 0: backlog=193, deficit=1266, skip=false
+  Bucket 1: backlog=166, deficit=1476, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 374, Size: 47997, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:12998 Timestamp:9748500 Size:60 Hash:1}
+  Queue state (Bulk), Length: 359, Size: 47995, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5274 Timestamp:3955500 Size:42 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=1434, skip=false
-  Bucket 1: backlog=169, deficit=1493, skip=false
+  Bucket 0: backlog=191, deficit=476, skip=false
+  Bucket 1: backlog=174, deficit=1446, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 367, Size: 47896, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:13063 Timestamp:9797250 Size:48 Hash:1}
+  Queue state (Bulk), Length: 365, Size: 47665, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5320 Timestamp:3990000 Size:40 Hash:1}
 ):
-  Bucket 0: backlog=198, deficit=597, skip=false
-  Bucket 1: backlog=163, deficit=1463, skip=false
+  Bucket 0: backlog=195, deficit=966, skip=false
+  Bucket 1: backlog=175, deficit=1442, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 361, Size: 47947, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:13113 Timestamp:9834750 Size:41 Hash:1}
+  Queue state (Bulk), Length: 370, Size: 47815, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5368 Timestamp:4026000 Size:60 Hash:1}
 ):
-  Bucket 0: backlog=201, deficit=857, skip=false
-  Bucket 1: backlog=153, deficit=1473, skip=false
+  Bucket 0: backlog=193, deficit=610, skip=false
+  Bucket 1: backlog=180, deficit=1459, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 354, Size: 47928, ScanIndex: 0
-LFQ state dump (reason: late send for packet &{Seqno:13158 Timestamp:9868500 Size:54 Hash:1}
+  Queue state (Bulk), Length: 373, Size: 47887, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5415 Timestamp:4061250 Size:48 Hash:1}
 ):
-  Bucket 0: backlog=200, deficit=917, skip=false
-  Bucket 1: backlog=158, deficit=1441, skip=false
+  Bucket 0: backlog=196, deficit=1476, skip=false
+  Bucket 1: backlog=176, deficit=1457, skip=false
   Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
-  Queue state (Bulk), Length: 358, Size: 47833, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47983, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5477 Timestamp:4107750 Size:60 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1427, skip=false
+  Bucket 1: backlog=166, deficit=1490, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47886, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5529 Timestamp:4146750 Size:54 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1376, skip=false
+  Bucket 1: backlog=163, deficit=1475, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47931, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5586 Timestamp:4189500 Size:40 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=555, skip=false
+  Bucket 1: backlog=162, deficit=1492, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47981, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5624 Timestamp:4218000 Size:48 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1203, skip=false
+  Bucket 1: backlog=162, deficit=1461, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 358, Size: 47739, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5679 Timestamp:4259250 Size:43 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1195, skip=false
+  Bucket 1: backlog=159, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 356, Size: 47903, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5728 Timestamp:4296000 Size:49 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1442, skip=false
+  Bucket 1: backlog=156, deficit=1447, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 357, Size: 47959, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5777 Timestamp:4332750 Size:60 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1115, skip=false
+  Bucket 1: backlog=164, deficit=1442, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47866, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5832 Timestamp:4374000 Size:50 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=154, skip=false
+  Bucket 1: backlog=169, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47949, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5869 Timestamp:4401750 Size:41 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1292, skip=false
+  Bucket 1: backlog=170, deficit=1490, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47856, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5913 Timestamp:4434750 Size:47 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1381, skip=true
+  Bucket 1: backlog=190, deficit=1455, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 385, Size: 47950, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:5963 Timestamp:4472250 Size:58 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1185, skip=false
+  Bucket 1: backlog=177, deficit=1445, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 376, Size: 47898, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6021 Timestamp:4515750 Size:53 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1102, skip=false
+  Bucket 1: backlog=172, deficit=1456, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 374, Size: 47966, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6078 Timestamp:4558500 Size:46 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1460, skip=false
+  Bucket 1: backlog=161, deficit=1469, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47960, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6125 Timestamp:4593750 Size:44 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=336, skip=false
+  Bucket 1: backlog=174, deficit=1469, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 373, Size: 47826, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6179 Timestamp:4634250 Size:44 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1206, skip=false
+  Bucket 1: backlog=165, deficit=1445, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47921, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6220 Timestamp:4665000 Size:60 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=1028, skip=false
+  Bucket 1: backlog=174, deficit=1499, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47873, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6276 Timestamp:4707000 Size:51 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1035, skip=false
+  Bucket 1: backlog=171, deficit=1492, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47970, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6332 Timestamp:4749000 Size:57 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=525, skip=false
+  Bucket 1: backlog=169, deficit=1463, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47868, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6377 Timestamp:4782750 Size:50 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1402, skip=false
+  Bucket 1: backlog=165, deficit=1488, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47829, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6433 Timestamp:4824750 Size:45 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1304, skip=false
+  Bucket 1: backlog=163, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47954, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6476 Timestamp:4857000 Size:49 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1351, skip=false
+  Bucket 1: backlog=166, deficit=1476, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47805, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6524 Timestamp:4893000 Size:48 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1025, skip=false
+  Bucket 1: backlog=171, deficit=1464, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47766, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6584 Timestamp:4938000 Size:48 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1325, skip=true
+  Bucket 1: backlog=174, deficit=1481, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 373, Size: 48000, ScanIndex: 2
+LFQ state dump (reason: late packet &{Seqno:6625 Timestamp:4968750 Size:59 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=734, skip=false
+  Bucket 1: backlog=171, deficit=1499, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47962, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6678 Timestamp:5008500 Size:44 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1172, skip=false
+  Bucket 1: backlog=167, deficit=1479, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47851, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6731 Timestamp:5048250 Size:48 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=887, skip=false
+  Bucket 1: backlog=170, deficit=1463, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47994, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6775 Timestamp:5081250 Size:58 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=1446, skip=false
+  Bucket 1: backlog=164, deficit=1497, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47953, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6886 Timestamp:5164500 Size:53 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=646, skip=false
+  Bucket 1: backlog=162, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47896, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6936 Timestamp:5202000 Size:40 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=642, skip=false
+  Bucket 1: backlog=164, deficit=1489, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47889, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:6978 Timestamp:5233500 Size:45 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=864, skip=false
+  Bucket 1: backlog=165, deficit=1458, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47846, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7028 Timestamp:5271000 Size:41 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1411, skip=false
+  Bucket 1: backlog=164, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47961, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7084 Timestamp:5313000 Size:47 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=734, skip=false
+  Bucket 1: backlog=167, deficit=1477, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47954, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7131 Timestamp:5348250 Size:59 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=1053, skip=false
+  Bucket 1: backlog=165, deficit=1499, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 359, Size: 47902, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7185 Timestamp:5388750 Size:45 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1210, skip=false
+  Bucket 1: backlog=160, deficit=1460, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 356, Size: 47813, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7233 Timestamp:5424750 Size:51 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1288, skip=false
+  Bucket 1: backlog=161, deficit=1495, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47870, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7277 Timestamp:5457750 Size:58 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=758, skip=false
+  Bucket 1: backlog=173, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 370, Size: 47954, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7324 Timestamp:5493000 Size:43 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1286, skip=false
+  Bucket 1: backlog=172, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 371, Size: 47892, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7369 Timestamp:5526750 Size:55 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1480, skip=false
+  Bucket 1: backlog=176, deficit=1492, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 371, Size: 47984, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7423 Timestamp:5567250 Size:48 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1263, skip=false
+  Bucket 1: backlog=177, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47924, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7472 Timestamp:5604000 Size:59 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1326, skip=false
+  Bucket 1: backlog=175, deficit=1470, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47919, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7534 Timestamp:5650500 Size:54 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=854, skip=false
+  Bucket 1: backlog=171, deficit=1451, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47700, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7587 Timestamp:5690250 Size:56 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=491, skip=false
+  Bucket 1: backlog=171, deficit=1474, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 370, Size: 47995, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7630 Timestamp:5722500 Size:59 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1119, skip=false
+  Bucket 1: backlog=166, deficit=1464, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47870, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7684 Timestamp:5763000 Size:53 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1285, skip=false
+  Bucket 1: backlog=161, deficit=1444, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47809, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7739 Timestamp:5804250 Size:57 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1005, skip=false
+  Bucket 1: backlog=165, deficit=1467, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47810, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7783 Timestamp:5837250 Size:54 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1452, skip=false
+  Bucket 1: backlog=167, deficit=1470, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47788, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7828 Timestamp:5871000 Size:47 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1491, skip=false
+  Bucket 1: backlog=163, deficit=1457, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47836, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7877 Timestamp:5907750 Size:57 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1388, skip=false
+  Bucket 1: backlog=167, deficit=1458, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47982, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7931 Timestamp:5948250 Size:58 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1390, skip=false
+  Bucket 1: backlog=165, deficit=1455, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47860, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:7978 Timestamp:5983500 Size:41 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=173, skip=false
+  Bucket 1: backlog=176, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 370, Size: 47884, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8030 Timestamp:6022500 Size:54 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=857, skip=false
+  Bucket 1: backlog=167, deficit=1498, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47932, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8070 Timestamp:6052500 Size:53 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1126, skip=false
+  Bucket 1: backlog=173, deficit=1485, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47724, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8119 Timestamp:6089250 Size:41 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1317, skip=false
+  Bucket 1: backlog=170, deficit=1485, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47839, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8187 Timestamp:6140250 Size:44 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=602, skip=false
+  Bucket 1: backlog=166, deficit=1454, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47829, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8231 Timestamp:6173250 Size:46 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1474, skip=false
+  Bucket 1: backlog=164, deficit=1465, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47944, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8280 Timestamp:6210000 Size:50 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1381, skip=false
+  Bucket 1: backlog=164, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47821, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8333 Timestamp:6249750 Size:46 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=700, skip=false
+  Bucket 1: backlog=171, deficit=1445, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47844, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8386 Timestamp:6289500 Size:44 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1364, skip=false
+  Bucket 1: backlog=160, deficit=1473, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 358, Size: 47909, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8429 Timestamp:6321750 Size:50 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1146, skip=false
+  Bucket 1: backlog=167, deficit=1469, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47825, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8481 Timestamp:6360750 Size:53 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1433, skip=false
+  Bucket 1: backlog=163, deficit=1495, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47926, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8537 Timestamp:6402750 Size:44 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1473, skip=true
+  Bucket 1: backlog=172, deficit=1460, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47524, ScanIndex: 1
+LFQ state dump (reason: late packet &{Seqno:8572 Timestamp:6429000 Size:49 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=787, skip=false
+  Bucket 1: backlog=173, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 371, Size: 47874, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8617 Timestamp:6462750 Size:41 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1190, skip=false
+  Bucket 1: backlog=178, deficit=1483, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 376, Size: 47929, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8685 Timestamp:6513750 Size:52 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=914, skip=false
+  Bucket 1: backlog=167, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47941, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8749 Timestamp:6561750 Size:44 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=945, skip=false
+  Bucket 1: backlog=152, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 353, Size: 47984, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8811 Timestamp:6608250 Size:52 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=558, skip=false
+  Bucket 1: backlog=143, deficit=1487, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 345, Size: 47933, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8848 Timestamp:6636000 Size:48 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=805, skip=false
+  Bucket 1: backlog=148, deficit=1499, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 347, Size: 47788, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8886 Timestamp:6664500 Size:49 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1287, skip=false
+  Bucket 1: backlog=160, deficit=1468, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 356, Size: 47978, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8938 Timestamp:6703500 Size:58 Hash:1}
+):
+  Bucket 0: backlog=193, deficit=1051, skip=false
+  Bucket 1: backlog=162, deficit=1461, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47706, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:8991 Timestamp:6743250 Size:60 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=603, skip=false
+  Bucket 1: backlog=161, deficit=1479, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 358, Size: 47965, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9036 Timestamp:6777000 Size:41 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1376, skip=false
+  Bucket 1: backlog=154, deficit=1476, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 353, Size: 47976, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9082 Timestamp:6811500 Size:42 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1028, skip=false
+  Bucket 1: backlog=163, deficit=1494, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47761, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9138 Timestamp:6853500 Size:58 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=914, skip=false
+  Bucket 1: backlog=162, deficit=1460, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47855, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9182 Timestamp:6886500 Size:55 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1225, skip=false
+  Bucket 1: backlog=164, deficit=1463, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47980, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9233 Timestamp:6924750 Size:44 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1493, skip=false
+  Bucket 1: backlog=164, deficit=1488, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47842, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9280 Timestamp:6960000 Size:43 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1236, skip=false
+  Bucket 1: backlog=172, deficit=1487, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47905, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9322 Timestamp:6991500 Size:41 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1359, skip=false
+  Bucket 1: backlog=174, deficit=1494, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 370, Size: 47971, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9371 Timestamp:7028250 Size:41 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1421, skip=false
+  Bucket 1: backlog=175, deficit=1474, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 370, Size: 47935, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9421 Timestamp:7065750 Size:49 Hash:1}
+):
+  Bucket 0: backlog=192, deficit=1343, skip=false
+  Bucket 1: backlog=182, deficit=1465, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 374, Size: 47790, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9478 Timestamp:7108500 Size:59 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=931, skip=false
+  Bucket 1: backlog=172, deficit=1451, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47895, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9533 Timestamp:7149750 Size:45 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1077, skip=false
+  Bucket 1: backlog=165, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47986, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9589 Timestamp:7191750 Size:53 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1227, skip=false
+  Bucket 1: backlog=159, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 361, Size: 47992, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9643 Timestamp:7232250 Size:45 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1008, skip=false
+  Bucket 1: backlog=157, deficit=1456, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 359, Size: 47998, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9688 Timestamp:7266000 Size:57 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=906, skip=false
+  Bucket 1: backlog=165, deficit=1496, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47954, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9782 Timestamp:7336500 Size:47 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1404, skip=false
+  Bucket 1: backlog=161, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47866, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9836 Timestamp:7377000 Size:42 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1414, skip=false
+  Bucket 1: backlog=156, deficit=1460, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 357, Size: 47955, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9887 Timestamp:7415250 Size:46 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1180, skip=false
+  Bucket 1: backlog=160, deficit=1480, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 356, Size: 47845, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9929 Timestamp:7446750 Size:53 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1255, skip=false
+  Bucket 1: backlog=165, deficit=1458, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47719, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:9979 Timestamp:7484250 Size:59 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1179, skip=false
+  Bucket 1: backlog=169, deficit=1489, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47880, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10024 Timestamp:7518000 Size:53 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1149, skip=false
+  Bucket 1: backlog=172, deficit=1481, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47949, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10072 Timestamp:7554000 Size:55 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1240, skip=false
+  Bucket 1: backlog=176, deficit=1451, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 371, Size: 47891, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10130 Timestamp:7597500 Size:46 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1123, skip=false
+  Bucket 1: backlog=170, deficit=1448, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47998, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10179 Timestamp:7634250 Size:58 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=946, skip=false
+  Bucket 1: backlog=170, deficit=1470, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47937, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10229 Timestamp:7671750 Size:59 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1368, skip=false
+  Bucket 1: backlog=168, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47827, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10292 Timestamp:7719000 Size:59 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1444, skip=false
+  Bucket 1: backlog=156, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47793, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10342 Timestamp:7756500 Size:53 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1370, skip=false
+  Bucket 1: backlog=155, deficit=1497, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 352, Size: 47913, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10392 Timestamp:7794000 Size:59 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1409, skip=false
+  Bucket 1: backlog=154, deficit=1490, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 350, Size: 47831, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10452 Timestamp:7839000 Size:46 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=404, skip=false
+  Bucket 1: backlog=153, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 351, Size: 47763, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10504 Timestamp:7878000 Size:58 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=215, skip=false
+  Bucket 1: backlog=150, deficit=1486, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 350, Size: 47955, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10559 Timestamp:7919250 Size:56 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1334, skip=false
+  Bucket 1: backlog=136, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 338, Size: 47863, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10601 Timestamp:7950750 Size:58 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=196, skip=false
+  Bucket 1: backlog=149, deficit=1466, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 349, Size: 47887, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10644 Timestamp:7983000 Size:43 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=1294, skip=false
+  Bucket 1: backlog=146, deficit=1484, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 349, Size: 47968, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10696 Timestamp:8022000 Size:55 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=513, skip=false
+  Bucket 1: backlog=155, deficit=1483, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 356, Size: 47876, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10730 Timestamp:8047500 Size:53 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=1383, skip=false
+  Bucket 1: backlog=161, deficit=1486, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47846, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10780 Timestamp:8085000 Size:55 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1214, skip=false
+  Bucket 1: backlog=165, deficit=1447, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47815, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10834 Timestamp:8125500 Size:55 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=579, skip=false
+  Bucket 1: backlog=172, deficit=1461, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 370, Size: 47800, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10886 Timestamp:8164500 Size:49 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1154, skip=false
+  Bucket 1: backlog=169, deficit=1454, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47824, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10941 Timestamp:8205750 Size:51 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=880, skip=false
+  Bucket 1: backlog=165, deficit=1445, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47948, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:10982 Timestamp:8236500 Size:60 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1357, skip=false
+  Bucket 1: backlog=166, deficit=1476, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47941, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11087 Timestamp:8315250 Size:48 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=452, skip=false
+  Bucket 1: backlog=169, deficit=1464, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47990, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11127 Timestamp:8345250 Size:44 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=1415, skip=false
+  Bucket 1: backlog=169, deficit=1475, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47952, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11198 Timestamp:8398500 Size:55 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=940, skip=false
+  Bucket 1: backlog=159, deficit=1483, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47978, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11251 Timestamp:8438250 Size:45 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1483, skip=false
+  Bucket 1: backlog=150, deficit=1485, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 350, Size: 47950, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11295 Timestamp:8471250 Size:43 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1356, skip=false
+  Bucket 1: backlog=150, deficit=1495, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 350, Size: 47858, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11346 Timestamp:8509500 Size:53 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1460, skip=true
+  Bucket 1: backlog=167, deficit=1474, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47807, ScanIndex: 1
+LFQ state dump (reason: late packet &{Seqno:11382 Timestamp:8536500 Size:49 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=1290, skip=false
+  Bucket 1: backlog=164, deficit=1487, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47773, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11432 Timestamp:8574000 Size:47 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=554, skip=false
+  Bucket 1: backlog=174, deficit=1462, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 372, Size: 47813, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11484 Timestamp:8613000 Size:50 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1353, skip=false
+  Bucket 1: backlog=162, deficit=1480, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47934, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11539 Timestamp:8654250 Size:44 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1459, skip=false
+  Bucket 1: backlog=158, deficit=1495, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 359, Size: 47913, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11599 Timestamp:8699250 Size:52 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1137, skip=false
+  Bucket 1: backlog=155, deficit=1467, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 355, Size: 47806, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11653 Timestamp:8739750 Size:57 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=1350, skip=false
+  Bucket 1: backlog=144, deficit=1496, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 347, Size: 48000, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11699 Timestamp:8774250 Size:48 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1087, skip=false
+  Bucket 1: backlog=150, deficit=1458, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 351, Size: 47715, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11747 Timestamp:8810250 Size:43 Hash:1}
+):
+  Bucket 0: backlog=203, deficit=1436, skip=false
+  Bucket 1: backlog=147, deficit=1464, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 350, Size: 47882, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11790 Timestamp:8842500 Size:60 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=1476, skip=false
+  Bucket 1: backlog=150, deficit=1488, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 352, Size: 47877, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11843 Timestamp:8882250 Size:48 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=308, skip=false
+  Bucket 1: backlog=161, deficit=1455, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47829, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11896 Timestamp:8922000 Size:40 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=615, skip=false
+  Bucket 1: backlog=155, deficit=1497, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 352, Size: 47833, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11937 Timestamp:8952750 Size:43 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1300, skip=false
+  Bucket 1: backlog=156, deficit=1478, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 352, Size: 47914, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:11984 Timestamp:8988000 Size:50 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=1298, skip=false
+  Bucket 1: backlog=161, deficit=1481, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 357, Size: 47790, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12025 Timestamp:9018750 Size:50 Hash:1}
+):
+  Bucket 0: backlog=195, deficit=1055, skip=false
+  Bucket 1: backlog=168, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 363, Size: 47674, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12080 Timestamp:9060000 Size:52 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=1076, skip=false
+  Bucket 1: backlog=170, deficit=1457, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47784, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12137 Timestamp:9102750 Size:40 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=81, skip=false
+  Bucket 1: backlog=166, deficit=1480, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 364, Size: 47918, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12175 Timestamp:9131250 Size:51 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=629, skip=false
+  Bucket 1: backlog=168, deficit=1495, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47868, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12237 Timestamp:9177750 Size:48 Hash:1}
+):
+  Bucket 0: backlog=196, deficit=365, skip=false
+  Bucket 1: backlog=163, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 359, Size: 47965, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12269 Timestamp:9201750 Size:44 Hash:1}
+):
+  Bucket 0: backlog=192, deficit=1241, skip=false
+  Bucket 1: backlog=168, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 360, Size: 47874, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12326 Timestamp:9244500 Size:43 Hash:1}
+):
+  Bucket 0: backlog=193, deficit=952, skip=false
+  Bucket 1: backlog=163, deficit=1481, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 356, Size: 47837, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12382 Timestamp:9286500 Size:49 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=787, skip=false
+  Bucket 1: backlog=159, deficit=1493, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 353, Size: 47897, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12433 Timestamp:9324750 Size:59 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=848, skip=false
+  Bucket 1: backlog=157, deficit=1497, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 357, Size: 47947, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12473 Timestamp:9354750 Size:48 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=730, skip=false
+  Bucket 1: backlog=164, deficit=1487, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 362, Size: 47789, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12510 Timestamp:9382500 Size:40 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1461, skip=false
+  Bucket 1: backlog=166, deficit=1490, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 366, Size: 47992, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12568 Timestamp:9426000 Size:50 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=570, skip=false
+  Bucket 1: backlog=170, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47725, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12616 Timestamp:9462000 Size:54 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=1091, skip=false
+  Bucket 1: backlog=167, deficit=1491, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47988, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12677 Timestamp:9507750 Size:60 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=288, skip=false
+  Bucket 1: backlog=167, deficit=1479, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47999, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12727 Timestamp:9545250 Size:46 Hash:1}
+):
+  Bucket 0: backlog=201, deficit=545, skip=false
+  Bucket 1: backlog=166, deficit=1469, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47953, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12771 Timestamp:9578250 Size:44 Hash:1}
+):
+  Bucket 0: backlog=202, deficit=540, skip=false
+  Bucket 1: backlog=167, deficit=1471, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47762, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12822 Timestamp:9616500 Size:53 Hash:1}
+):
+  Bucket 0: backlog=199, deficit=746, skip=false
+  Bucket 1: backlog=169, deficit=1463, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47797, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12871 Timestamp:9653250 Size:60 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1298, skip=false
+  Bucket 1: backlog=165, deficit=1492, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 365, Size: 47881, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12922 Timestamp:9691500 Size:43 Hash:1}
+):
+  Bucket 0: backlog=197, deficit=712, skip=false
+  Bucket 1: backlog=172, deficit=1456, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47900, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:12964 Timestamp:9723000 Size:58 Hash:1}
+):
+  Bucket 0: backlog=194, deficit=936, skip=false
+  Bucket 1: backlog=175, deficit=1455, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 369, Size: 47666, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:13015 Timestamp:9761250 Size:45 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=927, skip=false
+  Bucket 1: backlog=170, deficit=1466, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47987, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:13063 Timestamp:9797250 Size:59 Hash:1}
+):
+  Bucket 0: backlog=198, deficit=1318, skip=false
+  Bucket 1: backlog=170, deficit=1469, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 368, Size: 47888, ScanIndex: 0
+LFQ state dump (reason: late packet &{Seqno:13121 Timestamp:9840750 Size:40 Hash:1}
+):
+  Bucket 0: backlog=200, deficit=1282, skip=false
+  Bucket 1: backlog=167, deficit=1483, skip=false
+  Queue state (Sparse), Length: 0, Size: 0, ScanIndex: 0
+  Queue state (Bulk), Length: 367, Size: 47866, ScanIndex: 0
 {
     "FlowStats": [
         {
-            "BytesSent": 400132,
-            "Throughput": 40.0132,
-            "MeanSojourn": 125838.0515,
-            "Enqueues": 15573,
-            "Drops": 13573,
-            "DropsPercent": 87.15725935914725,
+            "BytesSent": 400645,
+            "Throughput": 40.0645,
+            "MeanSojourn": 126340.01458019105,
+            "Enqueues": 15521,
+            "Drops": 13532,
+            "DropsPercent": 87.18510405257393,
             "SparseSends": 1,
-            "BulkSends": 1999,
-            "TotalSends": 2000,
+            "BulkSends": 1988,
+            "TotalSends": 1989,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
-            "BytesSent": 399262,
-            "Throughput": 39.9262,
-            "MeanSojourn": 119770.71875,
+            "BytesSent": 400212,
+            "Throughput": 40.0212,
+            "MeanSojourn": 119798.49581824991,
             "Enqueues": 13334,
-            "Drops": 5334,
-            "DropsPercent": 40.0029998500075,
+            "Drops": 5323,
+            "DropsPercent": 39.92050397480126,
             "SparseSends": 1,
-            "BulkSends": 7999,
-            "TotalSends": 8000,
-            "LateSends": 257,
-            "LateSendsPercent": 3.2125
+            "BulkSends": 8010,
+            "TotalSends": 8011,
+            "LateSends": 255,
+            "LateSendsPercent": 3.1831232055923104
         }
     ]
 }
