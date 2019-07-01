@@ -168,7 +168,7 @@ func (q *LFQ) Enqueue(p *Packet, t Tick) {
 	bkt.Backlog++
 }
 
-func (q *LFQ) Dequeue() {
+func (q *LFQ) Dequeue() (sent bool) {
 	var p *Packet
 
 	// Sparse queue gets strict priority
@@ -176,6 +176,7 @@ func (q *LFQ) Dequeue() {
 		q.Sender.Send(p, true, q)
 		bkt := &q.buckets[p.Hash]
 		q.sent(p, bkt)
+		sent = true
 		return
 	}
 
@@ -203,12 +204,15 @@ func (q *LFQ) Dequeue() {
 			q.Sender.Send(p, false, q)
 			q.Bulk.Pull()
 			q.sent(p, bkt)
+			sent = true
 			return
 		} else {
 			// packet stays in queue
 			q.Bulk.ScanIndex++
 		}
 	}
+
+	return
 }
 
 func (q *LFQ) sent(p *Packet, bkt *FlowBucket) {

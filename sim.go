@@ -27,7 +27,6 @@ type FlowState struct {
 
 type Config struct {
 	EndTicks        Tick
-	DequeueInterval Tick
 	MTU             int
 	FastPull        bool
 	MaxSize         int
@@ -57,10 +56,11 @@ type Results struct {
 
 type Simulator struct {
 	*Config
-	FlowStates []FlowState
-	Results    Results
-	Tick       Tick
-	Rand       *rand.Rand
+	FlowStates  []FlowState
+	Results     Results
+	Tick        Tick
+	NextDequeue Tick
+	Rand        *rand.Rand
 }
 
 func NewSimulator(c *Config) *Simulator {
@@ -69,6 +69,7 @@ func NewSimulator(c *Config) *Simulator {
 		Results{
 			make([]FlowStats, len(c.FlowDefs)),
 		},
+		0,
 		0,
 		rand.New(rand.NewSource(time.Now().UnixNano())),
 	}
@@ -97,6 +98,8 @@ func (s *Simulator) Send(p *Packet, sparse bool, q *LFQ) {
 		r.LateSends++
 	}
 	s.FlowStates[i].PriorSeqno = p.Seqno
+
+	s.NextDequeue += Tick(p.Size)
 }
 
 func (s *Simulator) Run() *Results {
@@ -120,8 +123,10 @@ func (s *Simulator) Run() *Results {
 		}
 
 		// call dequeue
-		if s.Tick%s.DequeueInterval == 0 {
-			q.Dequeue()
+		if s.Tick == s.NextDequeue {
+			if !q.Dequeue() {
+				s.NextDequeue++
+			}
 		}
 	}
 
@@ -129,8 +134,7 @@ func (s *Simulator) Run() *Results {
 	for i := 0; i < len(s.FlowDefs); i++ {
 		r := &s.Results.FlowStats[i]
 		r.TotalSends = r.SparseSends + r.BulkSends
-		r.Throughput = float64(s.DequeueInterval) * float64(r.BytesSent) /
-			(float64(s.EndTicks) - float64(s.FlowDefs[i].Offset))
+		r.Throughput = 1000 * float64(r.BytesSent) / (float64(s.EndTicks) - float64(s.FlowDefs[i].Offset))
 		r.MeanSojourn = float64(r.TotalSojourn) / float64(r.TotalSends)
 		r.LateSendsPercent = float64(100.0) * float64(r.LateSends) / float64(r.TotalSends)
 		r.Drops = r.Enqueues - r.TotalSends

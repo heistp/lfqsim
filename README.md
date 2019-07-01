@@ -21,7 +21,6 @@ Using the default config.json, output similar to the following may be produced:
 ```
 {
     "EndTicks": 10000000,
-    "DequeueInterval": 1000,
     "MTU": 1500,
     "FastPull": false,
     "MaxSize": 48000,
@@ -201,7 +200,6 @@ Using the default config.json, output similar to the following may be produced:
 
 The `config.json` file controls the simulation, and has the following format:
 
-* `DequeueInterval` the number of simulation ticks from one dequeue to the next
 * `EndTicks` the last tick for the simulation, exclusive
 * `MTU` the MTU used for LFQ
 * `FastPull` if true, use an experimental pull method that copies the queue
@@ -226,7 +224,7 @@ The JSON output has the following format:
 * `FlowStats` an array of flow statistics, one for each flow in order, each of
   which contains:
   * `BytesSent` the total number of bytes sent for the flow
-  * `Throughput` the flow's throughput, in bytes per dequeue interval
+  * `Throughput` the flow's throughput, in bytes per 1000 ticks
   * `MeanSojourn` the mean sojourn time of all packets, in ticks
   * `Enqueues` the number of packets that were passed to enqueue
   * `Drops` the number of packets that were dropped (`Enqueues` - `TotalSends`)
