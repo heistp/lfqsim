@@ -6,12 +6,16 @@ import "log"
 // - No AQM
 // - Packet hash specified directly, so no cached value needed
 // - Send method contains sparse flag for simulation stats
-// - Pull method contains quick flag for experimental quick pull
+// - Pull method contains fast flag for experimental fast pull
 // - Timestamp is a Tick for the simulation
 
 // Algorithm / I-D notes:
 // - Walking all buckets in dequeue may be expensive
 // - Enqueue might loop infinitely if MaxSize too small. What's the minimum?
+
+// Todo:
+// - record dropped packets
+// - dump state on late packet
 
 type Packet struct {
 	Seqno     uint64
@@ -27,12 +31,12 @@ type FlowBucket struct {
 }
 
 type Queue struct {
-	packets   []Packet
+	packets   []*Packet
 	ScanIndex int
 }
 
 func NewQueue() *Queue {
-	return &Queue{make([]Packet, 0), 0}
+	return &Queue{make([]*Packet, 0), 0}
 }
 
 func (q *Queue) Len() int {
@@ -40,13 +44,13 @@ func (q *Queue) Len() int {
 }
 
 func (q *Queue) Size() (s int) {
-	for _, p := range q.packets {
-		s += p.Size
+	for i := 0; i < len(q.packets); i++ {
+		s += q.packets[i].Size
 	}
 	return
 }
 
-func (q *Queue) Pop() (p Packet, found bool) {
+func (q *Queue) Pop() (p *Packet, found bool) {
 	if len(q.packets) > 0 {
 		p, q.packets = q.packets[0], q.packets[1:]
 		found = true
@@ -54,12 +58,12 @@ func (q *Queue) Pop() (p Packet, found bool) {
 	return
 }
 
-func (q *Queue) Push(p Packet) {
+func (q *Queue) Push(p *Packet) {
 	q.packets = append(q.packets, p)
 	return
 }
 
-func (q *Queue) Head() (p Packet, found bool) {
+func (q *Queue) Head() (p *Packet, found bool) {
 	if len(q.packets) > 0 {
 		p = q.packets[0]
 		found = true
@@ -71,7 +75,7 @@ func (q *Queue) Empty() bool {
 	return len(q.packets) == 0
 }
 
-func (q *Queue) Scan() (p Packet, found bool) {
+func (q *Queue) Scan() (p *Packet, found bool) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
 		found = true
@@ -79,11 +83,11 @@ func (q *Queue) Scan() (p Packet, found bool) {
 	return
 }
 
-func (q *Queue) Pull(quick bool) (p Packet, found bool) {
+func (q *Queue) Pull(fast bool) (p *Packet, found bool) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
 		found = true
-		if quick {
+		if fast {
 			q.packets[q.ScanIndex] = q.packets[len(q.packets)-1]
 			q.packets = q.packets[:len(q.packets)-1]
 		} else {
@@ -94,32 +98,32 @@ func (q *Queue) Pull(quick bool) (p Packet, found bool) {
 }
 
 type Sender interface {
-	Send(p Packet, sparse bool)
+	Send(p *Packet, sparse bool)
 }
 
 type LFQ struct {
-	Sparse    *Queue
-	Bulk      *Queue
-	buckets   []FlowBucket
-	MaxSize   int
-	MTU       int
-	QuickPull bool
-	Sender    Sender
+	Sparse   *Queue
+	Bulk     *Queue
+	buckets  []FlowBucket
+	MaxSize  int
+	MTU      int
+	FastPull bool
+	Sender   Sender
 }
 
-func NewLFQ(maxFlows int, maxSize int, MTU int, quickPull bool, s Sender) *LFQ {
+func NewLFQ(maxFlows int, maxSize int, MTU int, fastPull bool, s Sender) *LFQ {
 	return &LFQ{
 		NewQueue(),
 		NewQueue(),
 		make([]FlowBucket, maxFlows),
 		maxSize,
 		MTU,
-		quickPull,
+		fastPull,
 		s,
 	}
 }
 
-func (q *LFQ) Enqueue(p Packet, t Tick) {
+func (q *LFQ) Enqueue(p *Packet, t Tick) {
 	for q.Sparse.Size()+q.Bulk.Size()+p.Size > q.MaxSize {
 		// queue overflow, drop from bulk head
 		if dp, found := q.Bulk.Pop(); found {
@@ -143,7 +147,7 @@ func (q *LFQ) Enqueue(p Packet, t Tick) {
 }
 
 func (q *LFQ) Dequeue() {
-	var p Packet
+	var p *Packet
 	var found bool
 
 	// Sparse queue gets strict priority
@@ -151,7 +155,7 @@ func (q *LFQ) Dequeue() {
 	if found {
 		q.Sender.Send(p, true)
 		bkt := &q.buckets[p.Hash]
-		q.sent(&p, bkt)
+		q.sent(p, bkt)
 		return
 	}
 
@@ -177,8 +181,8 @@ func (q *LFQ) Dequeue() {
 		if bkt := &q.buckets[p.Hash]; !bkt.Skip {
 			// packet eligible for immediate delivery
 			q.Sender.Send(p, false)
-			q.Bulk.Pull(q.QuickPull)
-			q.sent(&p, bkt)
+			q.Bulk.Pull(q.FastPull)
+			q.sent(p, bkt)
 			return
 		} else {
 			// packet stays in queue

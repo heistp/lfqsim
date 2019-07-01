@@ -23,7 +23,7 @@ Using the default config.json, output similar to the following may be produced:
     "EndTicks": 10000000,
     "DequeueInterval": 1000,
     "MTU": 1500,
-    "QuickPull": true,
+    "FastPull": true,
     "MaxSize": 48000,
     "FlowDefs": [
         {
@@ -174,7 +174,7 @@ The `config.json` file controls the simulation, and has the following format:
 * `DequeueInterval` the number of simulation ticks from one dequeue to the next
 * `EndTicks` the last tick for the simulation, exclusive
 * `MTU` the MTU used for LFQ
-* `QuickPull` if true, use an experimental pull method that copies the queue
+* `FastPull` if true, use an experimental pull method that copies the queue
   tail to the scan position and shortens the tail by one
 * `MaxSize` the maximum size of the queue, in bytes
 * `FlowDefs` an array of flow definitions, each of which contains:

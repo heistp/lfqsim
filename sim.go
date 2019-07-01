@@ -27,7 +27,7 @@ type Config struct {
 	EndTicks        Tick
 	DequeueInterval Tick
 	MTU             int
-	QuickPull       bool
+	FastPull        bool
 	MaxSize         int
 	FlowDefs        []FlowDef
 }
@@ -71,7 +71,7 @@ func NewSimulator(c *Config) *Simulator {
 	return s
 }
 
-func (s *Simulator) Send(p Packet, sparse bool) {
+func (s *Simulator) Send(p *Packet, sparse bool) {
 	i := p.Hash
 	r := &s.Results.FlowStats[i]
 	r.BytesSent += uint64(p.Size)
@@ -91,7 +91,7 @@ func (s *Simulator) Send(p Packet, sparse bool) {
 }
 
 func (s *Simulator) Run() *Results {
-	q := NewLFQ(len(s.FlowDefs), s.MaxSize, s.MTU, s.QuickPull, s)
+	q := NewLFQ(len(s.FlowDefs), s.MaxSize, s.MTU, s.FastPull, s)
 
 	// run simulation
 	for s.Tick = 0; s.Tick < s.EndTicks; s.Tick++ {
@@ -101,7 +101,7 @@ func (s *Simulator) Run() *Results {
 			if fs.NextEnqueue == s.Tick {
 				fd := &s.FlowDefs[i]
 				for j := 0; j < fd.Burst+s.randVaryInt(fd.BurstVariance); j++ {
-					q.Enqueue(Packet{fs.NextSeqno, 0, fd.Size + s.randVaryInt(fd.SizeVariance), i}, s.Tick)
+					q.Enqueue(&Packet{fs.NextSeqno, 0, fd.Size + s.randVaryInt(fd.SizeVariance), i}, s.Tick)
 					fs.NextSeqno++
 				}
 				fs.NextEnqueue += fd.Interval + s.randVaryTick(fd.IntervalVariance)
