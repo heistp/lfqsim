@@ -53,17 +53,6 @@ func (q *Queue) Push(p *Packet) {
 	return
 }
 
-func (q *Queue) Head() (p *Packet) {
-	if len(q.packets) > 0 {
-		p = q.packets[0]
-	}
-	return
-}
-
-func (q *Queue) Empty() bool {
-	return len(q.packets) == 0
-}
-
 func (q *Queue) Dump(label string, packets bool) {
 	log.Printf("  Queue state (%s), Length: %d, Size: %d", label, q.Len(), q.Size)
 	if packets {
@@ -110,6 +99,10 @@ func (q *ScanQueue) Pull() (p *Packet) {
 		q.Size -= p.Size
 	}
 	return
+}
+
+func (q *ScanQueue) Empty() bool {
+	return len(q.packets) == 0
 }
 
 func (q *ScanQueue) Dump(label string, packets bool) {
