@@ -92,7 +92,7 @@ func (s *Simulator) Send(p *Packet, sparse bool, q *LFQ) {
 
 	if p.Seqno < s.FlowStates[i].PriorSeqno {
 		if s.LateDump {
-			q.Dump(fmt.Sprintf("late packet %+v\n", p), s.LateDumpPackets)
+			q.Dump(fmt.Sprintf("late packet %+v", p), s.LateDumpPackets)
 		}
 		r.LateSends++
 	}
