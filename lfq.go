@@ -27,38 +27,29 @@ type FlowBucket struct {
 }
 
 type Queue struct {
-	packets   []*Packet
-	ScanIndex int
-	FastPull  bool
+	packets []*Packet
+	Size    int
 }
 
-func NewQueue(fastPull bool) *Queue {
-	return &Queue{make([]*Packet, 0), 0, fastPull}
+func NewQueue() *Queue {
+	return &Queue{make([]*Packet, 0), 0}
 }
 
 func (q *Queue) Len() int {
 	return len(q.packets)
 }
 
-func (q *Queue) Size() (s int) {
-	for i := 0; i < len(q.packets); i++ {
-		s += q.packets[i].Size
-	}
-	return
-}
-
 func (q *Queue) Pop() (p *Packet) {
 	if len(q.packets) > 0 {
 		p, q.packets = q.packets[0], q.packets[1:]
-		if q.ScanIndex > 0 {
-			q.ScanIndex--
-		}
+		q.Size -= p.Size
 	}
 	return
 }
 
 func (q *Queue) Push(p *Packet) {
 	q.packets = append(q.packets, p)
+	q.Size += p.Size
 	return
 }
 
@@ -73,14 +64,41 @@ func (q *Queue) Empty() bool {
 	return len(q.packets) == 0
 }
 
-func (q *Queue) Scan() (p *Packet) {
+func (q *Queue) Dump(label string, packets bool) {
+	log.Printf("  Queue state (%s), Length: %d, Size: %d", label, q.Len(), q.Size)
+	if packets {
+		for i, p := range q.packets {
+			log.Printf("%sPacket %d: %+v", "    ", i, p)
+		}
+	}
+}
+
+type ScanQueue struct {
+	*Queue
+	ScanIndex int
+	FastPull  bool
+}
+
+func NewScanQueue(fastPull bool) *ScanQueue {
+	return &ScanQueue{NewQueue(), 0, fastPull}
+}
+
+func (q *ScanQueue) Scan() (p *Packet) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
 	}
 	return
 }
 
-func (q *Queue) Pull() (p *Packet) {
+func (q *ScanQueue) Pop() (p *Packet) {
+	p = q.Queue.Pop()
+	if p != nil && q.ScanIndex > 0 {
+		q.ScanIndex--
+	}
+	return
+}
+
+func (q *ScanQueue) Pull() (p *Packet) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
 		if q.FastPull {
@@ -89,20 +107,21 @@ func (q *Queue) Pull() (p *Packet) {
 		} else {
 			q.packets = append(q.packets[:q.ScanIndex], q.packets[q.ScanIndex+1:]...)
 		}
+		q.Size -= p.Size
 	}
 	return
 }
 
-func (q *Queue) Dump(label string, packets bool) {
+func (q *ScanQueue) Dump(label string, packets bool) {
 	log.Printf("  Queue state (%s), Length: %d, Size: %d, ScanIndex: %d",
-		label, q.Len(), q.Size(), q.ScanIndex)
+		label, q.Len(), q.Size, q.ScanIndex)
 	if packets {
 		for i, p := range q.packets {
 			var prefix string
 			if i == q.ScanIndex {
-				prefix = "  -->"
+				prefix = "  ->"
 			} else {
-				prefix = "     "
+				prefix = "    "
 			}
 			log.Printf("%sPacket %d: %+v", prefix, i, p)
 		}
@@ -115,7 +134,7 @@ type Sender interface {
 
 type LFQ struct {
 	Sparse  *Queue
-	Bulk    *Queue
+	Bulk    *ScanQueue
 	buckets []FlowBucket
 	MaxSize int
 	MTU     int
@@ -124,8 +143,8 @@ type LFQ struct {
 
 func NewLFQ(maxFlows int, maxSize int, MTU int, fastPull bool, s Sender) *LFQ {
 	return &LFQ{
-		NewQueue(fastPull),
-		NewQueue(fastPull),
+		NewQueue(),
+		NewScanQueue(fastPull),
 		make([]FlowBucket, maxFlows),
 		maxSize,
 		MTU,
@@ -134,7 +153,7 @@ func NewLFQ(maxFlows int, maxSize int, MTU int, fastPull bool, s Sender) *LFQ {
 }
 
 func (q *LFQ) Enqueue(p *Packet, t Tick) {
-	for q.Sparse.Size()+q.Bulk.Size()+p.Size > q.MaxSize {
+	for q.Sparse.Size+q.Bulk.Size+p.Size > q.MaxSize {
 		// queue overflow, drop from bulk head
 		if dp := q.Bulk.Pop(); dp != nil {
 			q.buckets[dp.Hash].Backlog -= 1
