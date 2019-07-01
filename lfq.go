@@ -10,8 +10,8 @@ import "log"
 // - Send method contains sparse flag for simulation stats
 
 // Algorithm / I-D notes:
-// - Walking all buckets in dequeue may be expensive
-// - Enqueue might loop infinitely if MaxSize too small. What's the minimum?
+// - Enqueue might loop infinitely if MaxSize is less than the size of the
+//   sparse queue + the current packet being enqueued
 
 type Packet struct {
 	Seqno     uint64

@@ -1,6 +1,6 @@
 {
 	"DequeueInterval": 1000,
-	"EndTicks": 1000000000,
+	"EndTicks": 10000000,
 	"MTU": 1500,
 	"FastPull": false,
 	"MaxSize": 48000,
