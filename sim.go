@@ -2,11 +2,21 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"math/rand"
 	"time"
 )
 
 type Tick uint64
+
+type Seqno uint64
+
+type Packet struct {
+	Seqno     Seqno
+	Timestamp Tick
+	Size      int
+	Hash      int
+}
 
 type FlowDef struct {
 	Description      string
@@ -21,8 +31,8 @@ type FlowDef struct {
 
 type FlowState struct {
 	NextEnqueue Tick
-	NextSeqno   uint64
-	PriorSeqno  uint64
+	NextSeqno   Seqno
+	PriorSeqno  Seqno
 }
 
 type Config struct {
@@ -38,6 +48,8 @@ type FlowStats struct {
 	BytesSent        uint64
 	Throughput       float64
 	MeanSojourn      float64
+	MinSojourn       Tick
+	MaxSojourn       Tick
 	Enqueues         uint64
 	Drops            uint64
 	DropsPercent     float64
@@ -53,12 +65,17 @@ type Results struct {
 	FlowStats []FlowStats
 }
 
+type Sender interface {
+	Send(p *Packet, sparse bool)
+}
+
 type Simulator struct {
 	*Config
 	FlowStates  []FlowState
 	Results     Results
-	Tick        Tick
+	Now         Tick
 	NextDequeue Tick
+	LFQ         *LFQ
 	Rand        *rand.Rand
 }
 
@@ -70,62 +87,39 @@ func NewSimulator(c *Config) *Simulator {
 		},
 		0,
 		0,
+		nil,
 		rand.New(rand.NewSource(time.Now().UnixNano())),
 	}
-	for i := 0; i < len(c.FlowDefs); i++ {
-		s.FlowStates[i].NextEnqueue = c.FlowDefs[i].Offset
-	}
+	s.LFQ = NewLFQ(len(c.FlowDefs), c.MaxSize, c.MTU, s)
 	return s
 }
 
-func (s *Simulator) Send(p *Packet, sparse bool, q *LFQ) {
-	i := p.Hash
-	r := &s.Results.FlowStats[i]
-	r.BytesSent += uint64(p.Size)
-	r.TotalSojourn += (s.Tick - p.Timestamp)
-
-	if sparse {
-		r.SparseSends++
-	} else {
-		r.BulkSends++
-	}
-
-	if p.Seqno < s.FlowStates[i].PriorSeqno {
-		if s.LateDump {
-			q.Dump(fmt.Sprintf("late packet %+v", p), s.LateDumpPackets)
-		}
-		r.LateSends++
-	}
-	s.FlowStates[i].PriorSeqno = p.Seqno
-
-	s.NextDequeue += Tick(p.Size)
-}
-
 func (s *Simulator) Run() *Results {
-	q := NewLFQ(len(s.FlowDefs), s.MaxSize, s.MTU, s)
+	// initialize first enqueue time to flow offsets
+	for i := 0; i < len(s.FlowDefs); i++ {
+		s.FlowStates[i].NextEnqueue = s.FlowDefs[i].Offset
+	}
 
 	// run simulation
-	for s.Tick = 0; s.Tick < s.EndTicks; s.Tick++ {
+	for s.Now = 0; s.Now < s.EndTicks; s.Now++ {
 		// call enqueue for each eligible flow
 		for i := 0; i < len(s.FlowStates); i++ {
 			fs := &s.FlowStates[i]
 			r := &s.Results.FlowStats[i]
-			if fs.NextEnqueue == s.Tick {
+			if fs.NextEnqueue == s.Now {
 				fd := &s.FlowDefs[i]
-				for j := 0; j < fd.Burst+s.randVaryInt(fd.BurstVariance); j++ {
-					q.Enqueue(&Packet{fs.NextSeqno, 0, fd.Size + s.randVaryInt(fd.SizeVariance), i}, s.Tick)
+				for j := 0; j < fd.Burst+s.varyInt(fd.BurstVariance); j++ {
+					s.LFQ.Enqueue(&Packet{fs.NextSeqno, s.Now, fd.Size + s.varyInt(fd.SizeVariance), i})
 					r.Enqueues++
 					fs.NextSeqno++
 				}
-				fs.NextEnqueue += fd.Interval + s.randVaryTick(fd.IntervalVariance)
+				fs.NextEnqueue += fd.Interval + s.varyTick(fd.IntervalVariance)
 			}
 		}
 
-		// call dequeue
-		if s.Tick == s.NextDequeue {
-			if !q.Dequeue() {
-				s.NextDequeue++
-			}
+		// call dequeue if it's time- and try again each tick if nothing was sent
+		if s.Now == s.NextDequeue && !s.LFQ.Dequeue() {
+			s.NextDequeue++
 		}
 	}
 
@@ -143,16 +137,85 @@ func (s *Simulator) Run() *Results {
 	return &s.Results
 }
 
-func (s *Simulator) randVaryInt(v int) int {
+func (s *Simulator) Send(p *Packet, sparse bool) {
+	i := p.Hash
+	r := &s.Results.FlowStats[i]
+	r.BytesSent += uint64(p.Size)
+	sojourn := s.Now - p.Timestamp
+
+	r.TotalSojourn += sojourn
+	if sojourn < r.MinSojourn || r.MinSojourn == 0 {
+		r.MinSojourn = sojourn
+	}
+	if sojourn > r.MaxSojourn {
+		r.MaxSojourn = sojourn
+	}
+
+	if sparse {
+		r.SparseSends++
+	} else {
+		r.BulkSends++
+	}
+
+	if p.Seqno < s.FlowStates[i].PriorSeqno {
+		r.LateSends++
+		if s.LateDump {
+			s.LFQ.Dump(fmt.Sprintf("late packet %+v", p), s.LateDumpPackets)
+		}
+	}
+	s.FlowStates[i].PriorSeqno = p.Seqno
+
+	// schedule dequeue based on constant bitrate of one byte per tick
+	s.NextDequeue += Tick(p.Size)
+}
+
+func (s *Simulator) varyInt(v int) int {
 	if v == 0 {
 		return 0
 	}
 	return s.Rand.Intn(2*v+1) - v
 }
 
-func (s *Simulator) randVaryTick(v Tick) Tick {
+func (s *Simulator) varyTick(v Tick) Tick {
 	if v == 0 {
 		return 0
 	}
 	return Tick(s.Rand.Uint64())%(2*v+1) - v
+}
+
+// Additional simulation-specific methods for dumping state
+
+func (q *LFQ) Dump(reason string, packets bool) {
+	log.Printf("LFQ state dump (reason: %s):", reason)
+	for i, bkt := range q.buckets {
+		log.Printf("  Bucket %d: backlog=%d, deficit=%d, skip=%t", i, bkt.Backlog,
+			bkt.Deficit, bkt.Skip)
+	}
+	q.Sparse.Dump("Sparse", packets)
+	q.Bulk.Dump("Bulk", packets)
+}
+
+func (q *Queue) Dump(label string, packets bool) {
+	log.Printf("  Queue state (%s), Length: %d, Size: %d", label, q.Len(), q.Size)
+	if packets {
+		for i, p := range q.packets {
+			log.Printf("%sPacket %d: %+v", "    ", i, p)
+		}
+	}
+}
+
+func (q *ScanQueue) Dump(label string, packets bool) {
+	log.Printf("  Queue state (%s), Length: %d, Size: %d, ScanIndex: %d",
+		label, q.Len(), q.Size, q.ScanIndex)
+	if packets {
+		for i, p := range q.packets {
+			var prefix string
+			if i == q.ScanIndex {
+				prefix = "  ->"
+			} else {
+				prefix = "    "
+			}
+			log.Printf("%sPacket %d: %+v", prefix, i, p)
+		}
+	}
 }

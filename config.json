@@ -1,5 +1,5 @@
 {
-	"EndTicks": 10000000,
+	"EndTicks": 100000000,
 	"MTU": 1500,
 	"MaxSize": 256000,
 	"LateDump": true,
