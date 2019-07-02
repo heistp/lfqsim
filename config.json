@@ -1,7 +1,6 @@
 {
 	"EndTicks": 10000000,
 	"MTU": 1500,
-	"FastPull": false,
 	"MaxSize": 256000,
 	"LateDump": true,
 	"LateDumpPackets": false,

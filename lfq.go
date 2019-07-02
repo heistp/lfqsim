@@ -4,10 +4,10 @@ import "log"
 
 // Differences from I-D pseudo-code:
 // - No AQM
-// - Timestamp is a Tick for the simulation
+// - Timestamp is a Tick for the discrete time simulation
 // - Packet hash specified directly, so no cached value needed
-// - FastPull flag uses experimental fast pull (causes packet re-ordering)
 // - Send method contains sparse flag for simulation stats
+// - Dequeue method returns whether packet was sent or not
 
 // Algorithm / I-D notes:
 // - Enqueue might loop infinitely if MaxSize is less than the size of the
@@ -65,11 +65,10 @@ func (q *Queue) Dump(label string, packets bool) {
 type ScanQueue struct {
 	*Queue
 	ScanIndex int
-	FastPull  bool
 }
 
-func NewScanQueue(fastPull bool) *ScanQueue {
-	return &ScanQueue{NewQueue(), 0, fastPull}
+func NewScanQueue() *ScanQueue {
+	return &ScanQueue{NewQueue(), 0}
 }
 
 func (q *ScanQueue) Scan() (p *Packet) {
@@ -90,12 +89,7 @@ func (q *ScanQueue) Pop() (p *Packet) {
 func (q *ScanQueue) Pull() (p *Packet) {
 	if q.ScanIndex < len(q.packets) {
 		p = q.packets[q.ScanIndex]
-		if q.FastPull {
-			q.packets[q.ScanIndex] = q.packets[len(q.packets)-1]
-			q.packets = q.packets[:len(q.packets)-1]
-		} else {
-			q.packets = append(q.packets[:q.ScanIndex], q.packets[q.ScanIndex+1:]...)
-		}
+		q.packets = append(q.packets[:q.ScanIndex], q.packets[q.ScanIndex+1:]...)
 		q.Size -= p.Size
 	}
 	return
@@ -134,10 +128,10 @@ type LFQ struct {
 	Sender  Sender
 }
 
-func NewLFQ(maxFlows int, maxSize int, MTU int, fastPull bool, s Sender) *LFQ {
+func NewLFQ(maxFlows int, maxSize int, MTU int, s Sender) *LFQ {
 	return &LFQ{
 		NewQueue(),
-		NewScanQueue(fastPull),
+		NewScanQueue(),
 		make([]FlowBucket, maxFlows),
 		maxSize,
 		MTU,
@@ -224,8 +218,8 @@ func (q *LFQ) sent(p *Packet, bkt *FlowBucket) {
 	}
 }
 
-func (q *LFQ) Dump(label string, packets bool) {
-	log.Printf("LFQ state dump (reason: %s):", label)
+func (q *LFQ) Dump(reason string, packets bool) {
+	log.Printf("LFQ state dump (reason: %s):", reason)
 	for i, bkt := range q.buckets {
 		log.Printf("  Bucket %d: backlog=%d, deficit=%d, skip=%t", i, bkt.Backlog,
 			bkt.Deficit, bkt.Skip)

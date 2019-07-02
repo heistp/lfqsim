@@ -28,7 +28,6 @@ type FlowState struct {
 type Config struct {
 	EndTicks        Tick
 	MTU             int
-	FastPull        bool
 	MaxSize         int
 	LateDump        bool
 	LateDumpPackets bool
@@ -103,7 +102,7 @@ func (s *Simulator) Send(p *Packet, sparse bool, q *LFQ) {
 }
 
 func (s *Simulator) Run() *Results {
-	q := NewLFQ(len(s.FlowDefs), s.MaxSize, s.MTU, s.FastPull, s)
+	q := NewLFQ(len(s.FlowDefs), s.MaxSize, s.MTU, s)
 
 	// run simulation
 	for s.Tick = 0; s.Tick < s.EndTicks; s.Tick++ {
