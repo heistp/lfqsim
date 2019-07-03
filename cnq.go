@@ -29,6 +29,7 @@ func (q *CNQ) Enqueue(p *Packet) {
 			break
 		}
 		if dp.Size > 0 {
+			log.Println("remove from bulk hash", p.Hash)
 			q.backlogs[dp.Hash]--
 		}
 	}
@@ -39,6 +40,7 @@ func (q *CNQ) Enqueue(p *Packet) {
 		if dp == nil {
 			break
 		}
+		log.Println("remove from sparse hash", p.Hash)
 		q.backlogs[dp.Hash] -= 2
 	}
 
@@ -60,7 +62,7 @@ func (q *CNQ) Dequeue() (sent bool) {
 		q.Sender.Send(p, true)
 		q.backlogs[p.Hash] -= 2
 		sent = true
-		log.Println("after sparse send", p.Hash, q.backlogs[p.Hash])
+		log.Println("sparse send hash", p.Hash, "backlog", q.backlogs[p.Hash])
 		return
 	}
 
@@ -70,7 +72,7 @@ func (q *CNQ) Dequeue() (sent bool) {
 			q.Sender.Send(p, false)
 			q.backlogs[p.Hash]--
 			sent = true
-			log.Println("after bulk send", p.Hash, q.backlogs[p.Hash])
+			log.Println("bulk send hash", p.Hash, "backlog", q.backlogs[p.Hash])
 			return
 		}
 	}

@@ -1,7 +1,7 @@
 {
 	"EndTicks": 10000000,
 	"MTU": 1500,
-	"MaxSize": 256000,
+	"MaxSize": 12000,
 	"LateDump": true,
 	"LateDumpPackets": false,
 	"Algorithm": "CNQ",
