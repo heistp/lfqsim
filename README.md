@@ -28,7 +28,7 @@ configured flow at regular or varying intervals in ticks. Dequeue is called at a
 constant bitrate of one tick per byte. See the [Results](#results) section for
 information on what results are produced. Note that late packets (out of order
 packets) are not expected with LFQ, so please file an issue if you discover
-simulation parameters that cause them.
+simulation parameters that cause them, or any other pathological behavior.
 
 ## Differences from Internet Draft Specification
 
