@@ -4,6 +4,7 @@
 	"MaxSize": 256000,
 	"LateDump": true,
 	"LateDumpPackets": false,
+	"Algorithm": "LFQ",
 	"FlowDefs": [
 		{
 			"Description": "1200 byte packets at almost 1/3 interface rate",

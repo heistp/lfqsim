@@ -41,6 +41,7 @@ type Config struct {
 	MaxSize         int
 	LateDump        bool
 	LateDumpPackets bool
+	Algorithm       string
 	FlowDefs        []FlowDef
 }
 
@@ -65,6 +66,14 @@ type Results struct {
 	FlowStats []FlowStats
 }
 
+type Queuer interface {
+	Enqueue(p *Packet)
+
+	Dequeue() (sent bool)
+
+	Dump(reason string, packets bool)
+}
+
 type Sender interface {
 	Send(p *Packet, sparse bool)
 }
@@ -75,7 +84,7 @@ type Simulator struct {
 	Results     Results
 	Now         Tick
 	NextDequeue Tick
-	LFQ         *LFQ
+	Queuer      Queuer
 	Rand        *rand.Rand
 }
 
@@ -90,7 +99,11 @@ func NewSimulator(c *Config) *Simulator {
 		nil,
 		rand.New(rand.NewSource(time.Now().UnixNano())),
 	}
-	s.LFQ = NewLFQ(len(c.FlowDefs), c.MaxSize, c.MTU, s)
+	if s.Algorithm == "CNQ" {
+		s.Queuer = NewCNQ(len(c.FlowDefs), c.MaxSize, s)
+	} else {
+		s.Queuer = NewLFQ(len(c.FlowDefs), c.MaxSize, c.MTU, s)
+	}
 	return s
 }
 
@@ -109,7 +122,7 @@ func (s *Simulator) Run() *Results {
 			if fs.NextEnqueue == s.Now {
 				fd := &s.FlowDefs[i]
 				for j := 0; j < fd.Burst+s.varyInt(fd.BurstVariance); j++ {
-					s.LFQ.Enqueue(&Packet{fs.NextSeqno, s.Now, fd.Size + s.varyInt(fd.SizeVariance), i})
+					s.Queuer.Enqueue(&Packet{fs.NextSeqno, s.Now, fd.Size + s.varyInt(fd.SizeVariance), i})
 					r.Enqueues++
 					fs.NextSeqno++
 				}
@@ -118,7 +131,7 @@ func (s *Simulator) Run() *Results {
 		}
 
 		// call dequeue if it's time- and try again each tick if nothing was sent
-		if s.Now == s.NextDequeue && !s.LFQ.Dequeue() {
+		if s.Now == s.NextDequeue && !s.Queuer.Dequeue() {
 			s.NextDequeue++
 		}
 	}
@@ -160,7 +173,7 @@ func (s *Simulator) Send(p *Packet, sparse bool) {
 	if p.Seqno < s.FlowStates[i].PriorSeqno {
 		r.LateSends++
 		if s.LateDump {
-			s.LFQ.Dump(fmt.Sprintf("late packet %+v", p), s.LateDumpPackets)
+			s.Queuer.Dump(fmt.Sprintf("late packet %+v", p), s.LateDumpPackets)
 		}
 	}
 	s.FlowStates[i].PriorSeqno = p.Seqno
@@ -190,6 +203,15 @@ func (q *LFQ) Dump(reason string, packets bool) {
 	for i, bkt := range q.buckets {
 		log.Printf("  Bucket %d: backlog=%d, deficit=%d, skip=%t", i, bkt.Backlog,
 			bkt.Deficit, bkt.Skip)
+	}
+	q.Sparse.Dump("Sparse", packets)
+	q.Bulk.Dump("Bulk", packets)
+}
+
+func (q *CNQ) Dump(reason string, packets bool) {
+	log.Printf("CNQ state dump (reason: %s):", reason)
+	for i, b := range q.backlogs {
+		log.Printf("  Backlog %d: backlog=%d", i, b)
 	}
 	q.Sparse.Dump("Sparse", packets)
 	q.Bulk.Dump("Bulk", packets)
