@@ -21,14 +21,6 @@ func (q *Queue) Pop() (p *Packet) {
 	return
 }
 
-func (q *Queue) TailDrop() (p *Packet) {
-	if len(q.packets) > 0 {
-		p, q.packets = q.packets[len(q.packets)-1], q.packets[:len(q.packets)-1]
-		q.Size -= p.Size
-	}
-	return
-}
-
 func (q *Queue) Push(p *Packet) {
 	q.packets = append(q.packets, p)
 	q.Size += p.Size

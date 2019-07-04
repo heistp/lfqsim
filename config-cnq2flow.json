@@ -1,0 +1,30 @@
+{
+	"EndTicks": 100000000,
+	"MTU": 1500,
+	"MaxSize": 12000,
+	"LateDump": true,
+	"LateDumpPackets": false,
+	"Algorithm": "CNQ",
+	"FlowDefs": [
+		{
+			"description": "1500 byte packets exactly at interface rate",
+			"offset": 0,
+			"interval": 1500,
+			"intervalvariance": 1,
+			"burst": 1,
+			"burstvariance": 0,
+			"size": 1500,
+			"sizevariance": 0
+		},
+		{
+			"description": "1500 byte packets exactly at interface rate",
+			"offset": 0,
+			"interval": 1500,
+			"intervalvariance": 1,
+			"burst": 1,
+			"burstvariance": 0,
+			"size": 1500,
+			"sizevariance": 0
+		}
+	]
+}

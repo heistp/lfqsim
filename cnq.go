@@ -1,7 +1,5 @@
 package main
 
-import "log"
-
 // Cheap Nasty Queueing
 type CNQ struct {
 	Sparse   *Queue
@@ -28,20 +26,16 @@ func (q *CNQ) Enqueue(p *Packet) {
 		if dp == nil {
 			break
 		}
-		if dp.Size > 0 {
-			log.Println("remove from bulk hash", p.Hash)
-			q.backlogs[dp.Hash]--
-		}
+		q.backlogs[dp.Hash]--
 	}
 
-	// queue overflow, then from sparse if still needed
+	// then drop from sparse if still needed
 	for q.Sparse.Size+q.Bulk.Size+p.Size > q.MaxSize {
 		dp := q.Sparse.Pop()
 		if dp == nil {
 			break
 		}
-		log.Println("remove from sparse hash", p.Hash)
-		q.backlogs[dp.Hash] -= 2
+		q.backlogs[dp.Hash]--
 	}
 
 	if q.backlogs[p.Hash] == 0 {
@@ -60,9 +54,8 @@ func (q *CNQ) Dequeue() (sent bool) {
 	// Sparse queue gets strict priority
 	if p = q.Sparse.Pop(); p != nil {
 		q.Sender.Send(p, true)
-		q.backlogs[p.Hash] -= 2
+		q.backlogs[p.Hash]--
 		sent = true
-		log.Println("sparse send hash", p.Hash, "backlog", q.backlogs[p.Hash])
 		return
 	}
 
@@ -72,8 +65,9 @@ func (q *CNQ) Dequeue() (sent bool) {
 			q.Sender.Send(p, false)
 			q.backlogs[p.Hash]--
 			sent = true
-			log.Println("bulk send hash", p.Hash, "backlog", q.backlogs[p.Hash])
 			return
+		} else {
+			q.backlogs[p.Hash]--
 		}
 	}
 
