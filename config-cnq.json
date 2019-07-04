@@ -7,9 +7,9 @@
 	"Algorithm": "CNQ",
 	"FlowDefs": [
 		{
-			"Description": "1500 byte packets at a little more then 1/3 interface rate",
+			"Description": "1500 byte packets at a little more then 1/2 interface rate",
 			"Offset": 0,
-			"Interval": 4400,
+			"Interval": 3100,
 			"IntervalVariance": 1,
 			"Burst": 1,
 			"BurstVariance": 0,
@@ -17,9 +17,9 @@
 			"SizeVariance": 0
 		},
 		{
-			"Description": "500 byte packets at almost 1/3 interface rate",
+			"Description": "500 byte packets at almost 1/4 interface rate",
 			"Offset": 0,
-			"Interval": 310,
+			"Interval": 410,
 			"IntervalVariance": 1,
 			"Burst": 1,
 			"BurstVariance": 0,
@@ -27,9 +27,9 @@
 			"SizeVariance": 0
 		},
 		{
-			"Description": "Bursty flow- 1500 byte packets with 32 packet bursts at 1/3 interface rate",
+			"Description": "Bursty flow- 1500 byte packets with 32 packet bursts at 1/4 interface rate",
 			"Offset": 0,
-			"Interval": 144000,
+			"Interval": 192000,
 			"IntervalVariance": 1,
 			"Burst": 32,
 			"BurstVariance": 0,
