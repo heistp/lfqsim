@@ -17,14 +17,14 @@
 			"SizeVariance": 0
 		},
 		{
-			"Description": "1200 byte packets at almost 1/3 interface rate",
+			"Description": "500 byte packets at almost 1/3 interface rate",
 			"Offset": 0,
-			"Interval": 1600,
+			"Interval": 310,
 			"IntervalVariance": 1,
 			"Burst": 1,
 			"BurstVariance": 0,
-			"Size": 500,
-			"SizeVariance": 99
+			"Size": 100,
+			"SizeVariance": 0
 		},
 		{
 			"Description": "Bursty flow- 1500 byte packets with 32 packet bursts at 1/3 interface rate",
