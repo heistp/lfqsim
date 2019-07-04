@@ -1,0 +1,164 @@
+{
+    "EndTicks": 100000000,
+    "MTU": 1500,
+    "MaxSize": 128000,
+    "LateDump": true,
+    "LateDumpPackets": false,
+    "Algorithm": "CNQ",
+    "FlowDefs": [
+        {
+            "Description": "1500 byte packets at a little more then 1/3 interface rate",
+            "Offset": 0,
+            "Interval": 4400,
+            "IntervalVariance": 1,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 1500,
+            "SizeVariance": 0
+        },
+        {
+            "Description": "1200 byte packets at almost 1/3 interface rate",
+            "Offset": 0,
+            "Interval": 1600,
+            "IntervalVariance": 1,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 500,
+            "SizeVariance": 99
+        },
+        {
+            "Description": "Bursty flow- 1500 byte packets with 32 packet bursts at 1/3 interface rate",
+            "Offset": 0,
+            "Interval": 144000,
+            "IntervalVariance": 1,
+            "Burst": 32,
+            "BurstVariance": 0,
+            "Size": 1500,
+            "SizeVariance": 0
+        },
+        {
+            "Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at interval 10000",
+            "Offset": 0,
+            "Interval": 10000,
+            "IntervalVariance": 50,
+            "Burst": 2,
+            "BurstVariance": 2,
+            "Size": 200,
+            "SizeVariance": 50
+        },
+        {
+            "Description": "Small packets- 50 byte packets at interval 7500",
+            "Offset": 0,
+            "Interval": 7500,
+            "IntervalVariance": 1,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 50,
+            "SizeVariance": 10
+        },
+        {
+            "Description": "Sparse flow- 100 byte packets at interval long enough for buffer to clear",
+            "Offset": 0,
+            "Interval": 129000,
+            "IntervalVariance": 100,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 100,
+            "SizeVariance": 0
+        }
+    ]
+}
+{
+    "FlowStats": [
+        {
+            "BytesSent": 32872500,
+            "Throughput": 328.725,
+            "MeanSojourn": 101075.46192105864,
+            "MinSojourn": 973,
+            "MaxSojourn": 127917,
+            "Enqueues": 22728,
+            "Drops": 813,
+            "DropsPercent": 3.5770855332629354,
+            "SparseSends": 2,
+            "BulkSends": 21913,
+            "TotalSends": 21915,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 30147343,
+            "Throughput": 301.47343,
+            "MeanSojourn": 101710.67868575125,
+            "MinSojourn": 1500,
+            "MaxSojourn": 128940,
+            "Enqueues": 62500,
+            "Drops": 2207,
+            "DropsPercent": 3.5312,
+            "SparseSends": 1,
+            "BulkSends": 60292,
+            "TotalSends": 60293,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 33313500,
+            "Throughput": 333.135,
+            "MeanSojourn": 98914.56697735153,
+            "MinSojourn": 2,
+            "MaxSojourn": 127694,
+            "Enqueues": 22240,
+            "Drops": 31,
+            "DropsPercent": 0.1393884892086331,
+            "SparseSends": 695,
+            "BulkSends": 21514,
+            "TotalSends": 22209,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 2945995,
+            "Throughput": 29.45995,
+            "MeanSojourn": 101658.04476799564,
+            "MinSojourn": 345,
+            "MaxSojourn": 128639,
+            "Enqueues": 15274,
+            "Drops": 576,
+            "DropsPercent": 3.7711143119025796,
+            "SparseSends": 5,
+            "BulkSends": 14693,
+            "TotalSends": 14698,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 643413,
+            "Throughput": 6.43413,
+            "MeanSojourn": 101601.20779624165,
+            "MinSojourn": 3713,
+            "MaxSojourn": 128241,
+            "Enqueues": 13334,
+            "Drops": 456,
+            "DropsPercent": 3.4198290085495726,
+            "SparseSends": 1,
+            "BulkSends": 12877,
+            "TotalSends": 12878,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 77600,
+            "Throughput": 0.776,
+            "MeanSojourn": 565.4768041237113,
+            "MinSojourn": 1,
+            "MaxSojourn": 3772,
+            "Enqueues": 776,
+            "Drops": 0,
+            "DropsPercent": 0,
+            "SparseSends": 776,
+            "BulkSends": 0,
+            "TotalSends": 776,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        }
+    ]
+}
