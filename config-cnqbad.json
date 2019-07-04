@@ -69,7 +69,7 @@
 		{
 			"Description": "Sparse flow- 100 byte packets at interval 20000",
 			"Offset": 0,
-			"Interval": 100000,
+			"Interval": 20000,
 			"IntervalVariance": 100,
 			"Burst": 1,
 			"BurstVariance": 0,

@@ -37,7 +37,7 @@
 			"SizeVariance": 0
 		},
 		{
-			"Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at interval 10000",
+			"Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at interval 100000",
 			"Offset": 0,
 			"Interval": 100000,
 			"IntervalVariance": 50,
@@ -47,7 +47,7 @@
 			"SizeVariance": 50
 		},
 		{
-			"Description": "Small packets- 50 byte packets at interval 7500",
+			"Description": "Small packets- 50 byte packets at interval 100000",
 			"Offset": 0,
 			"Interval": 100000,
 			"IntervalVariance": 1,
@@ -57,7 +57,7 @@
 			"SizeVariance": 10
 		},
 		{
-			"Description": "Sparse flow- 100 byte packets at interval long enough for buffer to clear",
+			"Description": "Sparse flow- 100 byte packets at interval long enough for bulk to clear",
 			"Offset": 0,
 			"Interval": 129000,
 			"IntervalVariance": 100,
