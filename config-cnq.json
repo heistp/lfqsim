@@ -39,7 +39,7 @@
 		{
 			"Description": "Smallish packets- 200 byte packets, burst 2 +/- 2, at interval 10000",
 			"Offset": 0,
-			"Interval": 10000,
+			"Interval": 100000,
 			"IntervalVariance": 50,
 			"Burst": 2,
 			"BurstVariance": 2,
@@ -49,7 +49,7 @@
 		{
 			"Description": "Small packets- 50 byte packets at interval 7500",
 			"Offset": 0,
-			"Interval": 7500,
+			"Interval": 100000,
 			"IntervalVariance": 1,
 			"Burst": 1,
 			"BurstVariance": 0,
