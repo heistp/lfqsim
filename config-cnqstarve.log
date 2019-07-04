@@ -1,0 +1,64 @@
+{
+    "EndTicks": 100000000,
+    "MTU": 1500,
+    "MaxSize": 12000,
+    "LateDump": true,
+    "LateDumpPackets": false,
+    "Algorithm": "CNQ",
+    "FlowDefs": [
+        {
+            "Description": "1500 byte packets exactly at interface rate",
+            "Offset": 0,
+            "Interval": 1500,
+            "IntervalVariance": 0,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 1500,
+            "SizeVariance": 0
+        },
+        {
+            "Description": "1500 byte packets exactly at interface rate",
+            "Offset": 0,
+            "Interval": 1500,
+            "IntervalVariance": 0,
+            "Burst": 1,
+            "BurstVariance": 0,
+            "Size": 1500,
+            "SizeVariance": 0
+        }
+    ]
+}
+{
+    "FlowStats": [
+        {
+            "BytesSent": 99996000,
+            "Throughput": 999.96,
+            "MeanSojourn": 4499.864994599784,
+            "MinSojourn": 1500,
+            "MaxSojourn": 4500,
+            "Enqueues": 66667,
+            "Drops": 3,
+            "DropsPercent": 0.0044999775001125,
+            "SparseSends": 1,
+            "BulkSends": 66663,
+            "TotalSends": 66664,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 4500,
+            "Throughput": 0.045,
+            "MeanSojourn": 3000,
+            "MinSojourn": 1500,
+            "MaxSojourn": 4500,
+            "Enqueues": 66667,
+            "Drops": 66664,
+            "DropsPercent": 99.99550002249988,
+            "SparseSends": 1,
+            "BulkSends": 2,
+            "TotalSends": 3,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        }
+    ]
+}
