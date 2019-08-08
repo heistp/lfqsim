@@ -1,4 +1,5 @@
 {
+	"Notes": "Reproduces a starvation pathology not likely to happen in the real world",
 	"EndTicks": 100000000,
 	"MTU": 1500,
 	"MaxSize": 12000,

@@ -1,4 +1,5 @@
 {
+	"Notes": "Tests a mix of different traffic with LFQ",
 	"EndTicks": 100000000,
 	"MTU": 1500,
 	"MaxSize": 256000,

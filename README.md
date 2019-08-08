@@ -1,6 +1,7 @@
 # lfqsim
 
-This is a discrete time simulator for Lightweight Fair Queueing.
+This is a discrete time simulator for Lightweight Fair Queueing (LFQ) and
+Cheap Nasty Queueing (CNQ).
 
 ## Quick Start
 
@@ -12,25 +13,29 @@ JSON format. After having installed Go using your package manager or from
 go get github.com/heistp/lfqsim
 cd ~/go/src/github.com/heistp/lfqsim # or location of lfqsim directory
 go build
-./lfqsim < config.json
+./lfqsim < config-lfq.json
 ```
 
 ## Description
 
-Lightweight Fair Queueing is a fair queueing algorithm from Jonathon Morton with
-a small codebase, low memory requirements, and a design suitable for
-implementation in hardware. This related project provides an LFQ implementation
-(in `lfq.go`) and a discrete time simulation that measures how it performs with
-a configurable number of flows and their characteristics.
+Lightweight Fair Queueing (LFQ) and Cheap Nasty Queueing (CNQ) are fair queueing
+algorithms from Jonathon Morton with a small codebase, low memory requirements,
+and a design suitable for implementation in hardware. While LFQ provides
+throughput fairness, CNQ is even simpler and does not, providing only sparse
+flow optimization.
+
+This related project provides an LFQ implementation (in `lfq.go`), a CNQ
+implementation (in `cnq.go`) and a discrete time simulation that measures how
+they perform with a configurable number of flows and their characteristics.
 
 Each unit of time is referred to as a tick. Enqueue is called for each
 configured flow at regular or varying intervals in ticks. Dequeue is called at a
 constant bitrate of one tick per byte. See the [Results](#results) section for
-information on what results are produced. Note that late packets (out of order
-packets) are not expected with LFQ, so please file an issue if you discover
-simulation parameters that cause them, or any other pathological behavior.
+information on what results are obtained. Note that late packets (out of order
+packets) are not expected, so please file an issue if you discover simulation
+parameters that cause them, or any other pathological behavior.
 
-## Differences from Internet Draft Specification
+## Differences from LFQ Internet Draft Specification
 
 - No AQM (Active Queue Management), so we rely on overflow to manage queue size
 - The packet hash is specified directly
@@ -40,7 +45,7 @@ simulation parameters that cause them, or any other pathological behavior.
 
 ## Sample Simulation and Discussion
 
-Using the default `config.json`, output similar to what's below may be produced.
+Using the default `config-lfq.json`, output similar to what's below may be produced.
 
 ```
 {
@@ -49,6 +54,7 @@ Using the default `config.json`, output similar to what's below may be produced.
     "MaxSize": 256000,
     "LateDump": true,
     "LateDumpPackets": false,
+    "Algorithm": "LFQ",
     "FlowDefs": [
         {
             "Description": "1200 byte packets at almost 1/3 interface rate",
@@ -125,44 +131,59 @@ Using the default `config.json`, output similar to what's below may be produced.
 {
     "FlowStats": [
         {
-            "BytesSent": 22463044,
-            "Throughput": 224.63044,
-            "MeanSojourn": 46936.56279044923,
-            "MinSojourn": 7570,
-            "MaxSojourn": 50811,
+            "BytesSent": 22464062,
+            "Throughput": 224.64062,
+            "MeanSojourn": 46938.40334473178,
+            "MinSojourn": 7624,
+            "MaxSojourn": 50892,
             "Enqueues": 27028,
-            "Drops": 8307,
-            "DropsPercent": 30.734793547432293,
+            "Drops": 8312,
+            "DropsPercent": 30.753292881456268,
             "SparseSends": 1,
-            "BulkSends": 18720,
-            "TotalSends": 18721,
+            "BulkSends": 18715,
+            "TotalSends": 18716,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
-            "BytesSent": 22464000,
-            "Throughput": 224.64,
-            "MeanSojourn": 48914.4421073718,
-            "MinSojourn": 1278,
-            "MaxSojourn": 50904,
+            "BytesSent": 22465500,
+            "Throughput": 224.655,
+            "MeanSojourn": 48908.11771382787,
+            "MinSojourn": 1180,
+            "MaxSojourn": 50895,
             "Enqueues": 200000,
-            "Drops": 185024,
-            "DropsPercent": 92.512,
+            "Drops": 185023,
+            "DropsPercent": 92.5115,
             "SparseSends": 1,
-            "BulkSends": 14975,
-            "TotalSends": 14976,
+            "BulkSends": 14976,
+            "TotalSends": 14977,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 22465500,
+            "Throughput": 224.655,
+            "MeanSojourn": 48671.72658075716,
+            "MinSojourn": 2680,
+            "MaxSojourn": 50995,
+            "Enqueues": 66667,
+            "Drops": 51690,
+            "DropsPercent": 77.53461232693836,
+            "SparseSends": 1,
+            "BulkSends": 14976,
+            "TotalSends": 14977,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
             "BytesSent": 22464000,
             "Throughput": 224.64,
-            "MeanSojourn": 48675.2687633547,
-            "MinSojourn": 2778,
-            "MaxSojourn": 50999,
-            "Enqueues": 66667,
-            "Drops": 51691,
-            "DropsPercent": 77.5361123194384,
+            "MeanSojourn": 24438.113848824785,
+            "MinSojourn": 30,
+            "MaxSojourn": 51906,
+            "Enqueues": 66688,
+            "Drops": 51712,
+            "DropsPercent": 77.54318618042227,
             "SparseSends": 1,
             "BulkSends": 14975,
             "TotalSends": 14976,
@@ -170,56 +191,41 @@ Using the default `config.json`, output similar to what's below may be produced.
             "LateSendsPercent": 0
         },
         {
-            "BytesSent": 22462500,
-            "Throughput": 224.625,
-            "MeanSojourn": 24429.68567612688,
-            "MinSojourn": 3,
-            "MaxSojourn": 52862,
-            "Enqueues": 66688,
-            "Drops": 51713,
-            "DropsPercent": 77.54468570057581,
-            "SparseSends": 1,
-            "BulkSends": 14974,
-            "TotalSends": 14975,
-            "LateSends": 0,
-            "LateSendsPercent": 0
-        },
-        {
-            "BytesSent": 2981035,
-            "Throughput": 29.81035,
-            "MeanSojourn": 3910.195986307806,
-            "MinSojourn": 2,
-            "MaxSojourn": 14312,
-            "Enqueues": 14901,
-            "Drops": 2,
-            "DropsPercent": 0.013421917992081069,
-            "SparseSends": 6429,
-            "BulkSends": 8470,
-            "TotalSends": 14899,
-            "LateSends": 0,
-            "LateSendsPercent": 0
-        },
-        {
-            "BytesSent": 6665988,
-            "Throughput": 66.65988,
-            "MeanSojourn": 5477.608669236885,
+            "BytesSent": 2976785,
+            "Throughput": 29.76785,
+            "MeanSojourn": 3866.0304108485498,
             "MinSojourn": 1,
-            "MaxSojourn": 13287,
+            "MaxSojourn": 14186,
+            "Enqueues": 14896,
+            "Drops": 0,
+            "DropsPercent": 0,
+            "SparseSends": 6449,
+            "BulkSends": 8447,
+            "TotalSends": 14896,
+            "LateSends": 0,
+            "LateSendsPercent": 0
+        },
+        {
+            "BytesSent": 6664774,
+            "Throughput": 66.64774,
+            "MeanSojourn": 5477.628905722643,
+            "MinSojourn": 30,
+            "MaxSojourn": 13288,
             "Enqueues": 133334,
-            "Drops": 12,
-            "DropsPercent": 0.008999955000225,
-            "SparseSends": 8050,
-            "BulkSends": 125272,
-            "TotalSends": 133322,
+            "Drops": 4,
+            "DropsPercent": 0.0029999850000749996,
+            "SparseSends": 8048,
+            "BulkSends": 125282,
+            "TotalSends": 133330,
             "LateSends": 0,
             "LateSendsPercent": 0
         },
         {
             "BytesSent": 500000,
             "Throughput": 5,
-            "MeanSojourn": 663.662,
+            "MeanSojourn": 656.9394,
             "MinSojourn": 1,
-            "MaxSojourn": 6065,
+            "MaxSojourn": 5962,
             "Enqueues": 5000,
             "Drops": 0,
             "DropsPercent": 0,
@@ -234,7 +240,7 @@ Using the default `config.json`, output similar to what's below may be produced.
 ```
 
 The output contains two objects, the parsed configuration, for verification, and
-the results. From the results, it can be seen that throughput fairness is
+the results. From these LFQ results, it can be seen that throughput fairness is
 achieved for the first four flows, which send at a sufficiently high rate. It
 can also be seen that the sojourn time for the sparse flow (last flow) is far
 less than that for the bulk flows, as expected. Flows with intermediate

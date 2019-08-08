@@ -1,4 +1,5 @@
 {
+	"Notes": "Demonstrates expected lack of throughput fairness between two flows",
 	"EndTicks": 100000000,
 	"MTU": 1500,
 	"MaxSize": 12000,
